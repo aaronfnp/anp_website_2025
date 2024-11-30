@@ -11,23 +11,54 @@ export default function Timer() {
     seconds: "Check out my projects above and let me know what you think!",
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTime((prev) => prev + 1);
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   const days = Math.floor(time / 60 / 60 / 24);
   const hours = Math.floor((time / 60 / 60) % 24);
   const minutes = Math.floor((time / 60) % 60);
   const seconds = time % 60;
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTime((prev) => {
+        const updatedTime = prev + 1;
+        updateLocalTimer(updatedTime);
+        return updatedTime;
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const fetchLocalTimer = async () => {
+    try {
+      const localTimer = window.localStorage.getItem("LOCAL_TIMER");
+
+      if (localTimer !== null) {
+        const parsedTimer = JSON.parse(localTimer);
+
+        if (typeof parsedTimer === "number") {
+          setTime(parsedTimer);
+        }
+      } else {
+        console.log("No local timer found");
+        setTime(0);
+      }
+    } catch (error) {
+      console.error("Error loading timer:", error);
+    }
+  };
+
+  function updateLocalTimer(updatedTime) {
+    window.localStorage.setItem("LOCAL_TIMER", JSON.stringify(updatedTime));
+  }
+
+  useEffect(() => {
+    fetchLocalTimer();
+  }, []);
+
   return (
     <div>
       <h3>
-        You have been looking my portfolio for:{" "}
+        You have been looking at my portfolio for:{" "}
         {days >= 1 ? `${days} days,` : ""} {hours >= 1 ? `${hours} hours,` : ""}{" "}
         {minutes >= 1 ? `${minutes} minutes, ` : ""}
         {seconds} seconds
