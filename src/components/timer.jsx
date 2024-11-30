@@ -4,8 +4,8 @@ export default function Timer() {
   const [time, setTime] = useState(0);
 
   const bodyText = {
-    days: "I think this was just left on in the background...",
-    hours: "At this point I hope you've already hired me",
+    days: "I think this may have been left on in the background...",
+    hours: "At this point I hope we're already working together",
     minutes:
       "Thanks for giving my portfolio a thorough lookthrough! Please consider contacting me about working together!",
     seconds: "Check out my projects above and let me know what you think!",

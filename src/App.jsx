@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Header from "./components/header";
 import Timer from "./components/timer";
+import Contact from "./components/contact";
 
 function App() {
   return (
@@ -39,7 +40,7 @@ function App() {
         </h3>
         <h3 href="">GitHub</h3> <h3 href="">Application</h3>
         <h1>Contact</h1>
-        <Timer />
+        <Contact></Contact>
       </div>
     </div>
   );
