@@ -47,6 +47,10 @@ function About() {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg",
       alt: "Mongoose",
     },
+    {
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+      alt: "Firebase",
+    },
 
     // Version Control
     {
@@ -58,12 +62,6 @@ function About() {
     {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg",
       alt: "Unity",
-    },
-
-    // Firebase slot (left blank for now)
-    {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
-      alt: "Firebase",
     },
   ];
 

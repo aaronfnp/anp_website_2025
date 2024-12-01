@@ -10,12 +10,13 @@ function App() {
   return (
     <div>
       <Titlecard />
-
       <Header />
 
-      <About />
+      <section id="about">
+        <About />
+      </section>
 
-      <div className="projects-section p-8">
+      <section id="projects" className="projects-section p-8">
         <h1>Projects</h1>
         <ProjectContainer
           title={"Talent-Trees"}
@@ -44,9 +45,11 @@ function App() {
           linkGit={""}
           linkApp={""}
         />
-      </div>
+      </section>
 
-      <Contact />
+      <section id="contact">
+        <Contact />
+      </section>
     </div>
   );
 }
