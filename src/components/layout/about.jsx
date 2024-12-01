@@ -94,7 +94,7 @@ function About() {
                 <img
                   src={icon.src}
                   alt={icon.alt}
-                  className="w-16 h-16 object-contain m-2 border-2 border-indigo-600 rounded-md p-1"
+                  className="w-16 h-16 object-contain m-2 border-2 bg-[#e7fef6] border-slate-500 rounded-md p-1"
                 />
                 <h3 className="text-center text-sm">{icon.alt}</h3>
               </div>

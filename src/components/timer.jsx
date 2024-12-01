@@ -57,12 +57,15 @@ export default function Timer() {
 
   return (
     <div>
-      <h3>
-        You have been looking at my portfolio for:{" "}
-        {days >= 1 ? `${days} days,` : ""} {hours >= 1 ? `${hours} hours,` : ""}{" "}
-        {minutes >= 1 ? `${minutes} minutes, ` : ""}
-        {seconds} seconds
-      </h3>
+      <div>
+        <h3>You have been looking at my portfolio for: </h3>
+        <h3 className="text-[#00A97C]">
+          {days >= 1 ? `${days} days,` : ""}{" "}
+          {hours >= 1 ? `${hours} hours,` : ""}{" "}
+          {minutes >= 1 ? `${minutes} minutes, ` : ""}
+          {seconds} seconds
+        </h3>
+      </div>
       <h3>
         {days >= 1
           ? bodyText.days

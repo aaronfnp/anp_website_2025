@@ -8,10 +8,10 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-black sticky top-0 z-10">
+    <header className="bg-[#006645] sticky top-0 z-10 w-full">
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex w-full items-center justify-between p-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">

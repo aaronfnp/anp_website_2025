@@ -26,7 +26,7 @@ function Titlecard() {
             </h2>
             {/* Title 3 APPEARS ON CLICK */}
             <h2
-              className={`left-0 top-full text-xs transition-all opacity-0 duration-400 ${
+              className={`left-0 top-full text-xs text-[#00A97C] transition-all opacity-0 duration-400 ${
                 isTitleClicked
                   ? "group-hover:opacity-100"
                   : "group-hover:opacity-0"

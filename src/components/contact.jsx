@@ -31,7 +31,7 @@ export default function Contact() {
             <div className="flex-1">
               <label
                 htmlFor="name"
-                className="block text-sm/6 font-semibold text-gray-900"
+                className="block text-sm/6 font-semibold text-[#00A97C]"
               >
                 Name
               </label>
@@ -41,14 +41,14 @@ export default function Contact() {
                   name="name"
                   type="text"
                   autoComplete="name"
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#e7fdff]"
                 />
               </div>
             </div>
             <div className="flex-1 mt-4 sm:mt-0">
               <label
                 htmlFor="email"
-                className="block text-sm/6 font-semibold text-gray-900"
+                className="block text-sm/6 font-semibold text-[#00A97C]"
               >
                 Email
               </label>
@@ -58,7 +58,7 @@ export default function Contact() {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#e7fdff]"
                 />
               </div>
             </div>
@@ -66,7 +66,7 @@ export default function Contact() {
           <div className="sm:col-span-2 mt-4">
             <label
               htmlFor="message"
-              className="block text-sm/6 font-semibold text-gray-900"
+              className="block text-sm/6 font-semibold text-[#00A97C]"
             >
               Message
             </label>
@@ -75,7 +75,7 @@ export default function Contact() {
                 id="message"
                 name="message"
                 rows={4}
-                className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#e7fdff]"
                 defaultValue={""}
               />
             </div>
@@ -88,7 +88,7 @@ export default function Contact() {
               e.preventDefault();
               setIsSubmittingDialog(true);
             }}
-            className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="block w-full rounded-md bg-[#00A97C] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#006645] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#e7fdff]"
           >
             Contact Me
           </button>
