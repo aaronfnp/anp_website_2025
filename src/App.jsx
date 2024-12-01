@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./App.css";
-import Header from "./components/header";
-import Timer from "./components/timer";
+import Header from "./components/layout/header";
 import Contact from "./components/contact";
+import ProjectContainer from "./components/layout/project-container";
 
 function App() {
   return (
@@ -26,20 +26,24 @@ function App() {
           A dynamic web application for creating and sharing custom talent
           trees, designed for gamers to personalize skill paths.
         </h3>
+        <h4>Technologies: React, Firebase, Vite, Tailwind</h4>
         <h3 href="">GitHub</h3> <h3 href="">Application</h3>
         <h2>Colonel Kernel</h2>
         <h3>
           A clicker game where users earn &quot;corn&quot; to purchase upgrades,
           within a team of four.
         </h3>
+        <h4>Technologies: MongoDB, Express, React, Node.js</h4>
         <h3 href="">GitHub</h3> <h3 href="">Application</h3>
         <h2>Get Back To Work</h2>
         <h3>
           A 3D spot-the-difference game set in an office environment built in
           Unity
         </h3>
+        <h4>Technologies: Unity, C#, Blender</h4>
         <h3 href="">GitHub</h3> <h3 href="">Application</h3>
-        <h1>Contact</h1>
+        <h1>Test APP</h1>
+        <ProjectContainer></ProjectContainer>
         <Contact></Contact>
       </div>
     </div>
