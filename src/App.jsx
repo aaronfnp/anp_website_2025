@@ -3,23 +3,19 @@ import "./App.css";
 import Header from "./components/layout/header";
 import Contact from "./components/contact";
 import ProjectContainer from "./components/layout/project-container";
+import Titlecard from "./components/layout/titlecard";
+import About from "./components/layout/about";
 
 function App() {
   return (
     <div>
-      <div>
-        <h1>What do you get when you cross a VFX artist and coding?</h1>
-        <Header />
-        <h1>About</h1>
-        <h2>
-          Driven software engineer with a strong foundation in frontend and
-          full-stack web development, transitioning from a successful background
-          in VFX editing. My experience in VFX and game development (Unity & C#)
-          has honed my attention to detail and creativity, while General
-          Assembly&apos;s Software Engineering program solidified my technical
-          skills, especially in JavaScript and React. Passionate about creating
-          responsive, user-centered applications.
-        </h2>
+      <Titlecard />
+
+      <Header />
+
+      <About />
+
+      <div className="projects-section p-8">
         <h1>Projects</h1>
         <ProjectContainer
           title={"Talent-Trees"}
@@ -29,7 +25,7 @@ function App() {
           tech={"React, Firebase, Vite, Tailwind"}
           linkGit={""}
           linkApp={""}
-        ></ProjectContainer>
+        />
         <ProjectContainer
           title={"Colonel Kernel"}
           description={
@@ -38,7 +34,7 @@ function App() {
           tech={"MongoDB, Express, React, Node.js"}
           linkGit={""}
           linkApp={""}
-        ></ProjectContainer>
+        />
         <ProjectContainer
           title={"Get Back To Work"}
           description={
@@ -47,9 +43,10 @@ function App() {
           tech={"Unity, C#, Blender"}
           linkGit={""}
           linkApp={""}
-        ></ProjectContainer>
-        <Contact />
+        />
       </div>
+
+      <Contact />
     </div>
   );
 }
