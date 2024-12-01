@@ -6,7 +6,7 @@ function Titlecard() {
   const titles = {
     title1: "What do you get when you cross a VFX artist and coding?",
     title2: "A world of endless creativity and technical mastery.",
-    title3: "aka a guy who likes really minute details...",
+    title3: "also me, guy who likes really minute details...",
   };
 
   return (
