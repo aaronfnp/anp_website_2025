@@ -6,7 +6,7 @@ import {
   DialogPanel,
   DialogTitle,
 } from "@headlessui/react";
-import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
+import { ChatBubbleLeftEllipsisIcon } from "@heroicons/react/24/outline";
 
 export default function DialogWindow({
   isSubmittingDialog,
@@ -31,10 +31,10 @@ export default function DialogWindow({
           >
             <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
               <div className="sm:flex sm:items-start">
-                <div className="mx-auto flex size-12 shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:size-10">
-                  <ExclamationTriangleIcon
+                <div className="mx-auto flex size-12 shrink-0 items-center justify-center rounded-full bg-green-100 sm:mx-0 sm:size-10">
+                  <ChatBubbleLeftEllipsisIcon
                     aria-hidden="true"
-                    className="size-6 text-red-600"
+                    className="size-6 text-green-600"
                   />
                 </div>
                 <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
@@ -46,7 +46,7 @@ export default function DialogWindow({
                   </DialogTitle>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                      Did you mean to click this? Press confirm to send.
+                      Press confirm to send.
                     </p>
                   </div>
                 </div>
