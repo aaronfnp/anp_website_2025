@@ -10,7 +10,7 @@ function Titlecard() {
   };
 
   return (
-    <div className="title-section min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
+    <div className="min-h-screen w-full bg-gradient-to-r  flex items-center justify-center">
       <div className="bg-neutral-50/75 p-8 rounded-lg shadow-lg text-center max-w-xl mx-auto">
         <div className="text-md font-bold text-gray-800 mb-4 cursor-pointer">
           <div

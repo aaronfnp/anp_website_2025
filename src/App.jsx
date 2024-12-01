@@ -41,8 +41,8 @@ function App() {
     {
       title: "Ten-Second Torch",
       description:
-        "A 3D spot-the-difference game set in an office environment built in Unity",
-      tech: "Unity, C#, Blender",
+        "A '90s inspired horror game, where you have 10 seconds to keep your torch lit between campfires. Created for Ludum Dare #51.",
+      tech: "Unity, C#",
       linkGit: "",
       linkApp: "https://aaronfnp.itch.io/tstorch",
       linkImg:
@@ -51,35 +51,37 @@ function App() {
   ];
 
   return (
-    <div>
-      <Titlecard />
-      <Header />
+    <div className=" min-h-screen w-full">
+      <div className="w-full min-h-screen">
+        <Titlecard />
+        <Header />
 
-      <section id="about">
-        <About />
-      </section>
+        <section id="about">
+          <About />
+        </section>
 
-      <section id="projects" className="projects-section p-8">
-        <div>
-          <h1>Projects</h1>
-          {projects.map((project, index) => (
-            <ProjectContainer
-              key={index}
-              title={project.title}
-              description={project.description}
-              tech={project.tech}
-              linkGit={project.linkGit}
-              linkApp={project.linkApp}
-              linkImg={project.linkImg}
-              reverse={index % 2 !== 0}
-            />
-          ))}
-        </div>
-      </section>
+        <section id="projects" className="projects-section p-8">
+          <div>
+            <h1>Projects</h1>
+            {projects.map((project, index) => (
+              <ProjectContainer
+                key={index}
+                title={project.title}
+                description={project.description}
+                tech={project.tech}
+                linkGit={project.linkGit}
+                linkApp={project.linkApp}
+                linkImg={project.linkImg}
+                reverse={index % 2 !== 0}
+              />
+            ))}
+          </div>
+        </section>
 
-      <section id="contact">
-        <Contact />
-      </section>
+        <section id="contact">
+          <Contact />
+        </section>
+      </div>
     </div>
   );
 }
