@@ -5,9 +5,9 @@ export default function Timer() {
 
   const bodyText = {
     days: "I think this may have been left on in the background...",
-    hours: "At this point I hope we're already working together",
+    hours: "At this point, I hope we're already working together",
     minutes:
-      "Thanks for giving my portfolio a thorough lookthrough! Please consider contacting me about working together!",
+      "Thanks for giving my portfolio a thorough look-through! Please consider contacting me about working together!",
     seconds: "Check out my projects above and let me know what you think!",
   };
 
