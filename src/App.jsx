@@ -38,6 +38,16 @@ function App() {
       linkImg:
         "https://raw.githubusercontent.com/aaronfnp/kernel_colonel/main/public/game-interface.png",
     },
+    {
+      title: "Ten-Second Torch",
+      description:
+        "A 3D spot-the-difference game set in an office environment built in Unity",
+      tech: "Unity, C#, Blender",
+      linkGit: "",
+      linkApp: "https://aaronfnp.itch.io/tstorch",
+      linkImg:
+        "https://raw.githubusercontent.com/aaronfnp/kernel_colonel/main/public/game-interface.png",
+    },
   ];
 
   return (

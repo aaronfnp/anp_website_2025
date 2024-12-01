@@ -24,7 +24,11 @@ export default function ProjectContainer({
         <h2 className="text-2xl font-bold">{title}</h2>
         <h3 className="text-md">{description}</h3>
         <h4 className="text-sm font-bold">Technologies: {tech}</h4>
-        <div className="flex mt-5 space-x-2">
+        <div
+          className={`flex mt-5 ${
+            reverse ? "justify-end" : "justify-start"
+          } space-x-2`}
+        >
           {linkGit && (
             <a href={linkGit} className="flex items-center space-x-2">
               <img
