@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import {
   Dialog,
   DialogBackdrop,
@@ -8,14 +7,11 @@ import {
   DialogTitle,
 } from "@headlessui/react";
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
-import PropTypes from "prop-types";
 
 export default function DialogWindow({
   isSubmittingDialog,
   setIsSubmittingDialog,
 }) {
-  const [open, setOpen] = useState(true);
-
   return (
     <Dialog
       open={isSubmittingDialog}
@@ -79,8 +75,3 @@ export default function DialogWindow({
     </Dialog>
   );
 }
-
-DialogWindow.propTypes = {
-  isSubmittingDialog: PropTypes.bool.isRequired,
-  setIsSubmittingDialog: PropTypes.func.isRequired,
-};
