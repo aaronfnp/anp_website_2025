@@ -6,6 +6,7 @@ import DialogWindow from "./dialog";
 
 export default function Contact() {
   const [isSubmittingDialog, setIsSubmittingDialog] = useState(false);
+  const [isCompleteDialog, setIsCompleteDialog] = useState(false);
   const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
@@ -30,16 +31,30 @@ export default function Contact() {
       console.log("Error", data);
       setResult(data.message);
     }
-    setIsSubmittingDialog(false); // Reset dialog after form submission
+    setIsSubmittingDialog(false);
+    setIsCompleteDialog(true);
   };
 
   return (
     <div className="relative h-[75vh] pt-[2vh]">
       <h1 className="text-2xl ml-6 text-left font-extrabold">contact.</h1>
       <div className="isolate bg-white px-6">
+        {/* Submitting Dialog */}
         <DialogWindow
-          isSubmittingDialog={isSubmittingDialog}
-          setIsSubmittingDialog={setIsSubmittingDialog}
+          isDialogOpen={isSubmittingDialog}
+          setIsDialogOpen={setIsSubmittingDialog}
+          title="Sending Message"
+          message="Please wait"
+        />
+
+        {/* Result Dialog */}
+        <DialogWindow
+          isDialogOpen={isCompleteDialog}
+          setIsDialogOpen={setIsCompleteDialog}
+          title={
+            result === "Form Submitted Successfully" ? "Success!" : "Error"
+          }
+          message={result}
         />
         <div className="flex flex-col lg:flex-row">
           {/* Left Column: Timer and Text */}
