@@ -51,35 +51,29 @@ function App() {
   ];
 
   return (
-    <div className=" min-h-screen w-full">
+    <div className="min-h-screen w-full">
       <div className="w-full min-h-screen">
-        <Titlecard />
+        <div className="container-max-width hero-container">
+          <Titlecard />
+        </div>
         <Header />
 
         <section id="about">
-          <About />
+          <div className="container-max-width">
+            <About />
+          </div>
         </section>
 
         <section id="projects" className="projects-section p-8">
-          <div>
-            <h1>Projects</h1>
-            {projects.map((project, index) => (
-              <ProjectContainer
-                key={index}
-                title={project.title}
-                description={project.description}
-                tech={project.tech}
-                linkGit={project.linkGit}
-                linkApp={project.linkApp}
-                linkImg={project.linkImg}
-                reverse={index % 2 !== 0}
-              />
-            ))}
+          <div className="container-max-width">
+            <ProjectContainer projects={projects} />
           </div>
         </section>
 
         <section id="contact">
-          <Contact />
+          <div className="container-max-width">
+            <Contact />
+          </div>
         </section>
       </div>
     </div>

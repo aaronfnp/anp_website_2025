@@ -18,7 +18,7 @@ export default function Header() {
     <header className="sticky top-0 z-10 w-full bg-white shadow-lg">
       <nav
         aria-label="Global"
-        className="mx-auto flex w-full items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex w-full items-center justify-between p-6 lg:px-8 container-max-width"
       >
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
