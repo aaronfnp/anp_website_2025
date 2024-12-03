@@ -6,6 +6,13 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [active, setActive] = useState("about");
+
+  const links = [
+    { name: "about", href: "#about" },
+    { name: "projects", href: "#projects" },
+    { name: "contact", href: "#contact" },
+  ];
 
   return (
     <header className="sticky top-0 z-10 w-full bg-white shadow-lg">
@@ -33,36 +40,33 @@ export default function Header() {
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
         </div>
+        {/* Desktop Menu */}
         <PopoverGroup className="hidden lg:flex lg:gap-x-12 text-[#006645]">
-          <a
-            href="#projects"
-            className="text-lg font-semibold border-b-8 border-white hover:border-[#e7fdff] -mb-1 leading-tight"
-          >
-            about
-          </a>
-          <div className="flex flex-col items-center">
+          {links.map((link) => (
             <a
-              href="#projects"
-              className="text-lg font-semibold border-b-8 border-white hover:border-[#e7fdff] -mb-2 leading-tight"
+              key={link.name}
+              href={link.href}
+              onClick={() => setActive(link.name)}
+              className={`text-lg font-bold transition border-b-8 -mb-2 leading-tight ${
+                active === link.name
+                  ? "border-[#e7fdff]"
+                  : "border-white hover:border-[#e7fdff]"
+              }`}
             >
-              projects
+              {link.name}
             </a>
-          </div>
-          <a
-            href="#projects"
-            className="text-lg font-semibold border-b-8 border-white hover:border-[#e7fdff] -mb-1 leading-tight"
-          >
-            contact
-          </a>
+          ))}
         </PopoverGroup>
       </nav>
+
+      {/* Mobile Menu */}
       <Dialog
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-ƒ-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-ƒ-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">ANP</span>
@@ -84,24 +88,25 @@ export default function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-white-500/10">
               <div className="space-y-2 py-6 text-[#006645]">
-                <a
-                  href="#about"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold  hover:bg-gray-50"
-                >
-                  about
-                </a>
-                <a
-                  href="#projects"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold  hover:bg-gray-50"
-                >
-                  projects
-                </a>
-                <a
-                  href="#contact"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold  hover:bg-gray-50"
-                >
-                  contact
-                </a>
+                {links.map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    onClick={() => setActive(link.name)}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7"
+                  >
+                    {" "}
+                    <span
+                      className={`font-bold border-b-8 -mb-2 leading-tight ${
+                        active === link.name
+                          ? "border-[#e7fdff]"
+                          : "border-white hover:border-[#e7fdff]"
+                      }`}
+                    >
+                      {link.name}
+                    </span>
+                  </a>
+                ))}
               </div>
             </div>
           </div>
