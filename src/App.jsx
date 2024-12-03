@@ -6,6 +6,7 @@ import ProjectContainer from "./components/layout/project-container";
 import Titlecard from "./components/layout/titlecard";
 import About from "./components/layout/about";
 import Footer from "./components/layout/footer";
+import StyledBreak from "./components/layout/styledbreak";
 
 function App() {
   const projects = [
@@ -64,12 +65,14 @@ function App() {
             <About />
           </div>
         </section>
+        <StyledBreak side={"left"} />
 
         <section id="projects" className="projects-section p-8">
           <div className="container-max-width">
             <ProjectContainer projects={projects} />
           </div>
         </section>
+        <StyledBreak side={"right"} />
 
         <section id="contact">
           <div className="container-max-width">

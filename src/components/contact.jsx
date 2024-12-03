@@ -8,7 +8,7 @@ export default function Contact() {
   const [isSubmittingDialog, setIsSubmittingDialog] = useState(false);
 
   return (
-    <div className="relative h-screen pt-[20vh]">
+    <div className="relative h-screen pt-[10vh]">
       <h1 className="text-2xl ml-6 text-left font-extrabold">contact.</h1>
       <div className="isolate bg-white px-6">
         <DialogWindow
