@@ -57,45 +57,27 @@ function About() {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
       alt: "Git",
     },
-
-    // Other
-    {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg",
-      alt: "Unity",
-    },
   ];
+
+  const description =
+    "Driven software engineer with a strong foundation in frontend and full-stack web development, transitioning from a successful background in VFX editing. My experience in VFX and game development (Unity & C#) has honed my attention to detail and creativity, while General Assembly&apos;s Software Engineering program solidified my technical skills, especially in JavaScript and React. Passionate about creating responsive, user-centered applications.";
 
   return (
     <div className="about-section p-8">
-      <h1>About</h1>
-      <div className="flex columns-2 justify-center items-center">
-        <div className="flex flex-col w-1/2 justify-center items-center">
-          <img
-            src="https://air-tutorial.com/wp-content/uploads/2020/01/cropped-coding-man-6.png"
-            className="w-40 h-15"
-          ></img>
-          <h2>
-            Driven software engineer with a strong foundation in frontend and
-            full-stack web development, transitioning from a successful
-            background in VFX editing. My experience in VFX and game development
-            (Unity & C#) has honed my attention to detail and creativity, while
-            General Assembly&apos;s Software Engineering program solidified my
-            technical skills, especially in JavaScript and React. Passionate
-            about creating responsive, user-centered applications.
-          </h2>
+      <h1 className="font-bold mb-5 text-left">about.</h1>
+      <div className="flex justify-start items-start space-x-8">
+        <div className="flex flex-col w-1/2 text-left">
+          <h2>{description}</h2>
         </div>
+
         <div className="w-1/2">
-          <div className="grid grid-cols-4 gap-4 items-center">
+          <div className="grid grid-cols-6 gap-4 items-start xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
             {icons.map((icon, index) => (
               <div
                 key={index}
-                className="flex flex-col justify-center items-center w-16 h-24 "
+                className="flex flex-col justify-start items-center w-16 h-24"
               >
-                <img
-                  src={icon.src}
-                  alt={icon.alt}
-                  className="w-16 h-16 object-contain m-2 border-2 bg-[#e7fef6] border-slate-500 rounded-md p-1"
-                />
+                <img src={icon.src} alt={icon.alt} className="w-16 h-16 m-2" />
                 <h3 className="text-center text-sm">{icon.alt}</h3>
               </div>
             ))}
