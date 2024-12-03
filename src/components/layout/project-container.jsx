@@ -1,7 +1,7 @@
 const ProjectContainer = ({ projects }) => {
   return (
     <div>
-      <h1 className="ml-5 text-left font-bold">projects.</h1>
+      <h1 className="text-2xl ml-6 text-left font-extrabold">projects.</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8 mt-8 justify-center place-items-start">
         {projects.map((project, index) => (
           <div

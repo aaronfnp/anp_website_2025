@@ -8,32 +8,30 @@ export default function Contact() {
   const [isSubmittingDialog, setIsSubmittingDialog] = useState(false);
 
   return (
-    <div className="isolate bg-white px-6 py-20 sm:py-32 lg:px-8">
-      <DialogWindow
-        isSubmittingDialog={isSubmittingDialog}
-        setIsSubmittingDialog={setIsSubmittingDialog}
-      ></DialogWindow>
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
-      ></div>
-      <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-          Contact Me
-        </h2>
-        <p className="mt-5 text-lg/8 text-gray-600">
-          <Timer />
-        </p>
-      </div>
-      <form action="#" method="POST" className="mx-auto mt-8 max-w-xl sm:mt-12">
-        <div className="sm:col-span-2">
-          <div className="flex flex-col sm:flex-row sm:space-x-4">
-            <div className="flex-1">
+    <div>
+      <h1 className="text-2xl ml-6 text-left font-extrabold">contact.</h1>
+      <div className="isolate bg-white px-6">
+        <DialogWindow
+          isSubmittingDialog={isSubmittingDialog}
+          setIsSubmittingDialog={setIsSubmittingDialog}
+        />
+        <div className="flex flex-col lg:flex-row">
+          {/* Left Column: Timer and Text */}
+          <div className="lg:w-1/2 flex flex-col text-left">
+            <Timer />
+            <h3 className="mt-5">AARON NELSON-PURCELL</h3>
+            <h3>aaronfnp@gmail.com</h3>
+          </div>
+
+          {/* Right Column: Form */}
+          <form action="#" method="POST" className="lg:w-1/2">
+            {/* Name Input */}
+            <div className="w-1/2">
               <label
                 htmlFor="name"
-                className="block text-sm/6 font-semibold text-[#00A97C]"
+                className="block text-md font-bold text-[#00A97C] text-left"
               >
-                Name
+                name
               </label>
               <div className="mt-2.5">
                 <input
@@ -41,16 +39,18 @@ export default function Contact() {
                   name="name"
                   type="text"
                   autoComplete="name"
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#e7fdff]"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#e7fef6] placeholder:text-gray-400"
                 />
               </div>
             </div>
-            <div className="flex-1 mt-4 sm:mt-0">
+
+            {/* Email Input */}
+            <div className="w-full mt-4">
               <label
                 htmlFor="email"
-                className="block text-sm/6 font-semibold text-[#00A97C]"
+                className="block text-md font-bold text-[#00A97C] text-left"
               >
-                Email
+                email
               </label>
               <div className="mt-2.5">
                 <input
@@ -58,42 +58,46 @@ export default function Contact() {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#e7fdff]"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#e7fef6] placeholder:text-gray-400"
                 />
               </div>
             </div>
-          </div>
-          <div className="sm:col-span-2 mt-4">
-            <label
-              htmlFor="message"
-              className="block text-sm/6 font-semibold text-[#00A97C]"
-            >
-              Message
-            </label>
-            <div className="mt-2.5">
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#e7fdff]"
-                defaultValue={""}
-              />
+
+            {/* Message Input */}
+            <div className="w-full mt-4">
+              <label
+                htmlFor="message"
+                className="block text-md font-bold text-[#00A97C] text-left"
+              >
+                message
+              </label>
+              <div className="mt-2.5">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows={8}
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#e7fef6] placeholder:text-gray-400"
+                  defaultValue={""}
+                />
+              </div>
             </div>
-          </div>
+
+            {/* Submit Button */}
+            <div className="w-full mt-8">
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsSubmittingDialog(true);
+                }}
+                className="block w-full rounded-md bg-[#00A97C] px-3.5 py-2.5 text-center text-sm font-bold text-[#e7fef6] shadow-sm hover:bg-[#006645] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#e7fdff]"
+              >
+                contact me!
+              </button>
+            </div>
+          </form>
         </div>
-        <div className="mt-8">
-          <button
-            type="button"
-            onClick={(e) => {
-              e.preventDefault();
-              setIsSubmittingDialog(true);
-            }}
-            className="block w-full rounded-md bg-[#00A97C] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#006645] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#e7fdff]"
-          >
-            Contact Me
-          </button>
-        </div>
-      </form>
+      </div>
     </div>
   );
 }
