@@ -10,31 +10,27 @@ function Titlecard() {
   };
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-r  flex items-center justify-center">
-      <div className="bg-neutral-50/75 p-8 rounded-lg shadow-lg text-center max-w-xl mx-auto">
-        <div className="text-md font-bold text-gray-800 mb-4 cursor-pointer">
-          <div
-            className="relative group"
-            onClick={() => setIsTitleClicked(true)}
-          >
-            {/* Title 1 ALWAYS SHOWS */}
-            <h1 className="mb-4">{titles.title1}</h1>
+    <div className="container">
+      <div className="text-md font-bold text-gray-800 mb-4 cursor-pointer">
+        <div className="relative group" onClick={() => setIsTitleClicked(true)}>
+          {/* Title 1 ALWAYS SHOWS */}
+          <h1 className="mb-4">{titles.title1}</h1>
 
-            {/* Title 2 APPEARS ON HOVER */}
-            <h2 className="left-0 top-full opacity-0 group-hover:opacity-100 text-sm group-hover:text-lg transition-all duration-600">
-              {titles.title2}
-            </h2>
-            {/* Title 3 APPEARS ON CLICK */}
-            <h2
-              className={`left-0 top-full text-xs text-[#00A97C] transition-all opacity-0 duration-400 ${
-                isTitleClicked
-                  ? "group-hover:opacity-100"
-                  : "group-hover:opacity-0"
-              } `}
-            >
-              {titles.title3}
-            </h2>
-          </div>
+          {/* Title 2 APPEARS ON HOVER */}
+          <h2 className="left-0 top-full opacity-0 group-hover:opacity-100 text-sm group-hover:text-lg transition-all duration-600">
+            {titles.title2}
+          </h2>
+
+          {/* Title 3 APPEARS ON CLICK */}
+          <h2
+            className={`left-0 top-full text-xs text-[#00A97C] transition-all opacity-0 duration-400 ${
+              isTitleClicked
+                ? "group-hover:opacity-100"
+                : "group-hover:opacity-0"
+            } `}
+          >
+            {titles.title3}
+          </h2>
         </div>
       </div>
     </div>

@@ -15,11 +15,13 @@ export default function ProjectContainer({
         reverse ? "flex-row-reverse" : ""
       }`}
     >
-      <img
-        className="mx-5 object-cover h-48 w-96"
-        src={linkImg}
-        alt={`${title} Thumbnail`}
-      />
+      <div className="mx-5 border-8 border-[#006645] rounded-lg hover:border-[#00A97C] drop-shadow-md">
+        <img
+          className="object-cover h-48 w-96 grayscale hover:grayscale-0"
+          src={linkImg}
+          alt={`${title} Thumbnail`}
+        />
+      </div>
       <div className={`flex-col text-left ${reverse ? "text-right" : ""}`}>
         <h2 className="text-2xl font-bold">{title}</h2>
         <h3 className="text-md">{description}</h3>
