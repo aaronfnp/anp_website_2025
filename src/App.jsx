@@ -5,6 +5,7 @@ import Contact from "./components/contact";
 import ProjectContainer from "./components/layout/project-container";
 import Titlecard from "./components/layout/titlecard";
 import About from "./components/layout/about";
+import Footer from "./components/layout/footer";
 
 function App() {
   const projects = [
@@ -75,6 +76,9 @@ function App() {
             <Contact />
           </div>
         </section>
+      </div>
+      <div className="container-max-width">
+        <Footer />
       </div>
     </div>
   );
