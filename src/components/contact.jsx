@@ -6,6 +6,32 @@ import DialogWindow from "./dialog";
 
 export default function Contact() {
   const [isSubmittingDialog, setIsSubmittingDialog] = useState(false);
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setIsSubmittingDialog(true); // Set submitting dialog to true when the form is submitted
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "df53509d-ed1b-460f-adab-c864bc95b380");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+    setIsSubmittingDialog(false); // Reset dialog after form submission
+  };
 
   return (
     <div className="relative h-[75vh] pt-[2vh]">
@@ -51,7 +77,7 @@ export default function Contact() {
           </div>
 
           {/* Right Column: Form */}
-          <form action="#" method="POST" className="lg:w-1/2 sm:mt-2">
+          <form onSubmit={onSubmit} className="lg:w-1/2 sm:mt-2">
             {/* Name Input */}
             <div className="w-1/2">
               <label
@@ -65,6 +91,7 @@ export default function Contact() {
                   id="name"
                   name="name"
                   type="text"
+                  required
                   autoComplete="name"
                   className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#e7fef6] placeholder:text-gray-400"
                 />
@@ -84,6 +111,7 @@ export default function Contact() {
                   id="email"
                   name="email"
                   type="email"
+                  required
                   autoComplete="email"
                   className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#e7fef6] placeholder:text-gray-400"
                 />
@@ -103,8 +131,8 @@ export default function Contact() {
                   id="message"
                   name="message"
                   rows={8}
+                  required
                   className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#e7fef6] placeholder:text-gray-400"
-                  defaultValue={""}
                 />
               </div>
             </div>
@@ -112,11 +140,7 @@ export default function Contact() {
             {/* Submit Button */}
             <div className="w-full mt-8">
               <button
-                type="button"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setIsSubmittingDialog(true);
-                }}
+                type="submit"
                 className="block w-full rounded-md bg-[#00A97C] px-3.5 py-2.5 text-center text-sm font-bold text-[#e7fef6] shadow-sm hover:bg-[#006645] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#e7fdff]"
               >
                 contact me!

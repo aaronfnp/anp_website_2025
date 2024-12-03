@@ -39,27 +39,12 @@ export default function DialogWindow({
               as="h3"
               className="mt-4 text-lg font-semibold text-gray-900 text-center"
             >
-              Submit Message?
+              Sending Message
             </DialogTitle>
             <p className="mt-2 text-center text-sm text-gray-500">
-              Press confirm to send.
+              Please wait
             </p>
-            <div className="mt-6 flex space-x-4">
-              <button
-                type="button"
-                onClick={() => setIsSubmittingDialog(false)}
-                className="inline-flex items-center rounded-md bg-gray-200 px-4 py-2 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-300"
-              >
-                Cancel
-              </button>
-              <button
-                type="button"
-                onClick={() => setIsSubmittingDialog(false)}
-                className="inline-flex items-center rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500"
-              >
-                Confirm
-              </button>
-            </div>
+            <p className=" text-center text-sm text-gray-500">☺</p>
           </div>
         </DialogPanel>
       </div>
