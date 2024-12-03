@@ -63,7 +63,7 @@ function About() {
     "Driven software engineer with a strong foundation in frontend and full-stack web development, transitioning from a successful background in VFX editing. My experience in VFX and game development (Unity & C#) has honed my attention to detail and creativity, while General Assembly's Software Engineering program solidified my technical skills, especially in JavaScript and React. Passionate about creating responsive, user-centered applications.";
 
   return (
-    <div className="about-section relative h-[75vh] pt-[20vh]">
+    <div className="about-section relative h-[60vh] pt-[20vh]">
       <h1 className="text-2xl text-left font-extrabold">about.</h1>
       <div className="flex justify-start items-start space-x-8 h-full">
         <div className="flex flex-col w-1/2 text-left">

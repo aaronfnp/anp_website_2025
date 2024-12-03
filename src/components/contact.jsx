@@ -8,7 +8,7 @@ export default function Contact() {
   const [isSubmittingDialog, setIsSubmittingDialog] = useState(false);
 
   return (
-    <div className="relative h-[75vh] pt-[5vh]">
+    <div className="relative h-[75vh] pt-[2vh]">
       <h1 className="text-2xl ml-6 text-left font-extrabold">contact.</h1>
       <div className="isolate bg-white px-6">
         <DialogWindow
@@ -51,7 +51,7 @@ export default function Contact() {
           </div>
 
           {/* Right Column: Form */}
-          <form action="#" method="POST" className="lg:w-1/2">
+          <form action="#" method="POST" className="lg:w-1/2 sm:mt-2">
             {/* Name Input */}
             <div className="w-1/2">
               <label

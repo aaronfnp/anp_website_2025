@@ -2,7 +2,7 @@ const ProjectContainer = ({ projects }) => {
   return (
     <div>
       <h1 className="text-2xl text-left font-extrabold">projects.</h1>
-      <div className="flex flex-wrap justify-between my-8 min-h-lvh">
+      <div className="flex flex-wrap justify-between my-8 min-h-[90vh]">
         {projects.map((project, index) => (
           // PROJECT CONTAINER
           <div

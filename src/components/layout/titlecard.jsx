@@ -4,8 +4,8 @@ function Titlecard() {
   const [isTitleClicked, setIsTitleClicked] = useState(false);
 
   const titles = {
-    title2: "a cross between creativity and technical mastery.",
-    title3: "also me, a guy who likes really minute details...",
+    title2: "code that looks as good as it works.",
+    title3: "ALSO ME, a guy who's obsessed with the smallest details...",
   };
 
   return (
@@ -18,10 +18,9 @@ function Titlecard() {
           {/* Title 1 ALWAYS SHOWS */}
           <h1 className="my-4 leading-relaxed">
             WHAT DO YOU GET <br />
-            WHEN YOU CROSS <br />
-            A VFX ARTIST <br />
-            AND <br />
-            CODING <br />?
+            WHEN A VFX ARTIST <br />
+            BECOMES A <br />
+            DEVELOPER <br />?
           </h1>
 
           {/* Title 2 APPEARS ON HOVER */}
