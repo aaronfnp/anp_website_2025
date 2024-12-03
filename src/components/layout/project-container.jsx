@@ -28,7 +28,7 @@ const ProjectContainer = ({ projects }) => {
               <h4 className="text-md my-1 font-bold text-[#00A97C]">
                 {project.tech}
               </h4>
-              <div className="flex justify-start space-x-2">
+              <div className="flex justify-start">
                 {project.linkGit && (
                   <a
                     href={project.linkGit}
@@ -36,19 +36,16 @@ const ProjectContainer = ({ projects }) => {
                   >
                     <img
                       className="object-cover h-8 w-8"
-                      src="https://img.icons8.com/?size=100&id=SzgQDfObXUbA&format=png&color=000000"
+                      src="https://img.icons8.com/?size=100&id=12599&format=png&color=92A0FF"
                       alt="GitHub Icon"
                     />
                   </a>
                 )}
                 {project.linkApp && (
-                  <a
-                    href={project.linkApp}
-                    className="flex items-center space-x-2"
-                  >
+                  <a href={project.linkApp} className="flex items-center">
                     <img
                       className="object-cover h-10 w-10"
-                      src="https://img.icons8.com/?size=100&id=PdMS7nTd0vpH&format=png&color=000000"
+                      src="https://img.icons8.com/?size=100&id=mVWTXxOBk0I1&format=png&color=8fe3c7"
                       alt="Application Icon"
                     />
                   </a>

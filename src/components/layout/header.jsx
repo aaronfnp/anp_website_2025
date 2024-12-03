@@ -21,13 +21,12 @@ export default function Header() {
         className="mx-auto flex w-full items-center justify-between p-6 lg:px-8 container-max-width"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">ANP</span>
-            <img
-              alt=""
-              src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-              className="h-8 w-auto"
-            />
+          <a
+            href="#"
+            className="-m-1.5 p-1.5 text-[1.75rem] text-[#006645] hover:text-[#00A97C]"
+            aria-label="ANP"
+          >
+            ☺
           </a>
         </div>
         <div className="flex lg:hidden">

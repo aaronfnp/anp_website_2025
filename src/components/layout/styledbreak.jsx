@@ -6,7 +6,7 @@ export default function StyledBreak({ side }) {
       <div className="relative h-[20vh]">
         <div
           className={`absolute bottom-10 ${
-            side === "left" ? "left-8" : "right-8"
+            side === "left" ? "left-0" : "right-0"
           } w-[1%] h-[100%] bg-[#e7fdff]`}
         ></div>
       </div>

@@ -8,7 +8,7 @@ export default function Contact() {
   const [isSubmittingDialog, setIsSubmittingDialog] = useState(false);
 
   return (
-    <div className="relative h-screen pt-[10vh]">
+    <div className="relative h-[75vh] pt-[5vh]">
       <h1 className="text-2xl ml-6 text-left font-extrabold">contact.</h1>
       <div className="isolate bg-white px-6">
         <DialogWindow
@@ -19,8 +19,35 @@ export default function Contact() {
           {/* Left Column: Timer and Text */}
           <div className="lg:w-1/2 flex flex-col text-left">
             <Timer />
-            <h3 className="mt-5">AARON NELSON-PURCELL</h3>
-            <h3>aaronfnp@gmail.com</h3>
+            <h3 className="mt-5 font-thin">AARON NELSON-PURCELL</h3>
+            <a
+              href="mailto:aaronfnp@gmail.com"
+              className="font-thin hover:underline hover:font-light"
+            >
+              aaronfnp@gmail.com
+            </a>
+            <div className="flex justify-start mt-1">
+              <a
+                href="https://github.com/aaronfnp"
+                className="flex items-center"
+              >
+                <img
+                  className="object-cover h-10 w-10 mr-1"
+                  src="https://img.icons8.com/?size=100&id=12599&format=png&color=92A0FF"
+                  alt="GitHub Profile"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/aaronnp/"
+                className="flex items-center"
+              >
+                <img
+                  className="object-cover h-10 w-10"
+                  src="https://img.icons8.com/?size=100&id=60444&format=png&color=92A0FF"
+                  alt="LinkedIn Profile"
+                />
+              </a>
+            </div>
           </div>
 
           {/* Right Column: Form */}
@@ -31,7 +58,7 @@ export default function Contact() {
                 htmlFor="name"
                 className="block text-md font-bold text-[#00A97C] text-left"
               >
-                name
+                name:
               </label>
               <div className="mt-2.5">
                 <input
@@ -50,7 +77,7 @@ export default function Contact() {
                 htmlFor="email"
                 className="block text-md font-bold text-[#00A97C] text-left"
               >
-                email
+                email:
               </label>
               <div className="mt-2.5">
                 <input
@@ -69,7 +96,7 @@ export default function Contact() {
                 htmlFor="message"
                 className="block text-md font-bold text-[#00A97C] text-left"
               >
-                message
+                message:
               </label>
               <div className="mt-2.5">
                 <textarea
