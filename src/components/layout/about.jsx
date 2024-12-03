@@ -60,7 +60,7 @@ function About() {
   ];
 
   const description =
-    "Driven software engineer with a strong foundation in frontend and full-stack web development, transitioning from a successful background in VFX editing. My experience in VFX and game development (Unity & C#) has honed my attention to detail and creativity, while General Assembly's Software Engineering program solidified my technical skills, especially in JavaScript and React. Passionate about creating responsive, user-centered applications.";
+    "I'm a software developer with a solid foundation in frontend and full-stack web development, building on my background in VFX editing. Originally my interest in video game development started as a hobby, which led me to explore Unity and C#. My experiences have helped me develop a keen eye for detail and creativity. After completing General Assembly's Software Engineering program, I've focused on honing my skills in JavaScript and React.";
 
   return (
     <div className="about-section relative h-[60vh] pt-[20vh]">
@@ -68,6 +68,13 @@ function About() {
       <div className="flex justify-start items-start space-x-8 h-full">
         <div className="flex flex-col w-1/2 text-left">
           <h2>{description}</h2>
+          <h2>
+            <span className="font-bold text-green-600 italic">
+              More than anything,{" "}
+            </span>{" "}
+            <br></br>I want to build practical solutions that{" "}
+            <span className="underline">genuinely</span> help people.
+          </h2>
         </div>
 
         <div className="w-1/2">
