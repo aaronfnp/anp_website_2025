@@ -7,6 +7,9 @@ import Titlecard from "./components/layout/titlecard";
 import About from "./components/layout/about";
 import Footer from "./components/layout/footer";
 import StyledBreak from "./components/layout/styledbreak";
+import GetBackToWork from "./assets/images/GetBackToWork.png";
+import TenSecondTorch from "./assets/images/TenSecondTorch.png";
+import TalentTrees from "./assets/images/TalentTrees.png";
 
 function App() {
   const projects = [
@@ -17,8 +20,7 @@ function App() {
       tech: "React, Firebase, Vite, Tailwind",
       linkGit: "https://github.com/chriscain/talent-trees",
       linkApp: "",
-      linkImg:
-        "https://raw.githubusercontent.com/aaronfnp/kernel_colonel/main/public/game-interface.png",
+      linkImg: TalentTrees,
     },
     {
       title: "Colonel Kernel",
@@ -37,8 +39,7 @@ function App() {
       tech: "Unity, C#, Blender",
       linkGit: "",
       linkApp: "",
-      linkImg:
-        "https://raw.githubusercontent.com/aaronfnp/kernel_colonel/main/public/game-interface.png",
+      linkImg: GetBackToWork,
     },
     {
       title: "Ten-Second Torch",
@@ -47,8 +48,7 @@ function App() {
       tech: "Unity, C#",
       linkGit: "",
       linkApp: "https://aaronfnp.itch.io/tstorch",
-      linkImg:
-        "https://raw.githubusercontent.com/aaronfnp/kernel_colonel/main/public/game-interface.png",
+      linkImg: TenSecondTorch,
     },
   ];
 
