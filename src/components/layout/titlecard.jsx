@@ -4,20 +4,28 @@ function Titlecard() {
   const [isTitleClicked, setIsTitleClicked] = useState(false);
 
   const titles = {
-    title1: "What do you get when you cross a VFX artist and coding?",
-    title2: "A world of endless creativity and technical mastery.",
+    title2: "a cross between creativity and technical mastery.",
     title3: "also me, a guy who likes really minute details...",
   };
 
   return (
-    <div className="container">
+    <div className="flex flex-col container">
       <div className="text-md font-bold text-gray-800 mb-4 cursor-pointer">
-        <div className="relative group" onClick={() => setIsTitleClicked(true)}>
+        <div
+          className="relative group mx-auto text-center"
+          onClick={() => setIsTitleClicked(true)}
+        >
           {/* Title 1 ALWAYS SHOWS */}
-          <h1 className="mb-4">{titles.title1}</h1>
+          <h1 className="my-4 leading-relaxed">
+            WHAT DO YOU GET <br />
+            WHEN YOU CROSS <br />
+            A VFX ARTIST <br />
+            AND <br />
+            CODING <br />?
+          </h1>
 
           {/* Title 2 APPEARS ON HOVER */}
-          <h2 className="left-0 top-full opacity-0 group-hover:opacity-100 text-sm group-hover:text-lg transition-all duration-600">
+          <h2 className="left-0 top-full opacity-0 group-hover:opacity-100 text-lg group-hover:text-lg transition-all duration-600">
             {titles.title2}
           </h2>
 
