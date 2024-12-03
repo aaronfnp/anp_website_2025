@@ -1,13 +1,15 @@
 const ProjectContainer = ({ projects }) => {
   return (
     <div>
-      <h1 className="text-2xl ml-6 text-left font-extrabold">projects.</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8 mt-8 justify-center place-items-start">
+      <h1 className="text-2xl text-left font-extrabold">projects.</h1>
+      <div className="flex flex-wrap justify-between my-8 min-h-lvh">
         {projects.map((project, index) => (
+          // PROJECT CONTAINER
           <div
             key={index}
-            className="flex flex-col items-center justify-center mx-5 w-[350px] h-[450px] "
+            className="flex flex-col items-center justify-center w-full sm:w-[45%] lg:w-[35%]"
           >
+            {/* IMAGE */}
             <div className="w-full h-[200px] flex items-center justify-center drop-shadow-md">
               <img
                 className="object-cover h-full w-full"
@@ -16,12 +18,13 @@ const ProjectContainer = ({ projects }) => {
               />
             </div>
 
-            <div className="flex-col text-left mt-4 flex-grow w-full">
+            {/* TEXT */}
+            <div className="flex flex-col text-left mt-4 flex-grow w-full">
               <h2 className="text-2xl font-semibold text-slate-500">
                 {project.title}
               </h2>
               <p className="text-md text-slate-500">{project.description}</p>
-              <div className="mt-4 w-[30%] h-[4%] bg-[#e7fdff]"></div>
+              <div className="mt-4 w-[30%] h-[4%] bg-[#e7fef6]"></div>
               <h4 className="text-md my-1 font-bold text-[#00A97C]">
                 {project.tech}
               </h4>
