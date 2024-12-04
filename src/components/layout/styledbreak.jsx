@@ -7,7 +7,7 @@ export default function StyledBreak({ side }) {
         <div
           className={`absolute bottom-10 ${
             side === "left" ? "left-0" : "right-0"
-          } w-[1%] h-[100%] bg-[#e7fdff]`}
+          } w-[.5%] h-[100%] bg-[#f1f1e6] rounded`}
         ></div>
       </div>
     </div>

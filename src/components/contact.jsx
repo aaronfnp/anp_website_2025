@@ -38,8 +38,8 @@ export default function Contact() {
 
   return (
     <div className="relative h-[75vh] pt-[2vh]">
-      <h1 className="text-2xl ml-6 text-left font-extrabold">contact.</h1>
-      <div className="isolate bg-white px-6">
+      <h1 className=" ml-6 text-left font-extrabold">contact.</h1>
+      <div className="isolate px-6">
         {/* Submitting Dialog */}
         <DialogWindow
           isDialogOpen={isSubmittingDialog}
@@ -59,7 +59,7 @@ export default function Contact() {
         />
         <div className="flex flex-col lg:flex-row">
           {/* Left Column: Timer and Text */}
-          <div className="lg:w-1/2 flex flex-col text-left">
+          <div className="lg:w-1/2 flex flex-col text-left text-[#f6f9ff]">
             <Timer />
             <h3 className="mt-5 font-thin">AARON NELSON-PURCELL</h3>
             <a
@@ -98,7 +98,7 @@ export default function Contact() {
             <div className="w-1/2">
               <label
                 htmlFor="name"
-                className="block text-md font-bold text-[#00A97C] text-left"
+                className="block text-md font-bold text-[#4091f9] text-left"
               >
                 name:
               </label>
@@ -109,7 +109,7 @@ export default function Contact() {
                   type="text"
                   required
                   autoComplete="name"
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#e7fef6] placeholder:text-gray-400"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#f1f1e6] placeholder:text-gray-400"
                 />
               </div>
             </div>
@@ -118,7 +118,7 @@ export default function Contact() {
             <div className="w-full mt-4">
               <label
                 htmlFor="email"
-                className="block text-md font-bold text-[#00A97C] text-left"
+                className="block text-md font-bold text-[#4091f9] text-left"
               >
                 email:
               </label>
@@ -129,7 +129,7 @@ export default function Contact() {
                   type="email"
                   required
                   autoComplete="email"
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#e7fef6] placeholder:text-gray-400"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#f1f1e6] placeholder:text-gray-400"
                 />
               </div>
             </div>
@@ -138,7 +138,7 @@ export default function Contact() {
             <div className="w-full mt-4">
               <label
                 htmlFor="message"
-                className="block text-md font-bold text-[#00A97C] text-left"
+                className="block text-md font-bold text-[#4091f9] text-left"
               >
                 message:
               </label>
@@ -148,7 +148,7 @@ export default function Contact() {
                   name="message"
                   rows={8}
                   required
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#e7fef6] placeholder:text-gray-400"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#f1f1e6] placeholder:text-gray-400"
                 />
               </div>
             </div>
@@ -157,7 +157,7 @@ export default function Contact() {
             <div className="w-full mt-8">
               <button
                 type="submit"
-                className="block w-full rounded-md bg-[#00A97C] px-3.5 py-2.5 text-center text-sm font-bold text-[#e7fef6] shadow-sm hover:bg-[#006645] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#e7fdff]"
+                className="block w-full rounded-md bg-[#4091f9] px-3.5 py-2.5 text-center text-sm font-bold text-[#f1f1e6] shadow-sm hover:bg-[#006645] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#e7fdff]"
               >
                 contact me!
               </button>

@@ -15,7 +15,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-10 w-full bg-white shadow-lg">
+    <header className="sticky top-0 z-10 w-full bg-gradient-to-b from-[#2f3e5d] to-[#121212] border-t border-[#2f3e5d] shadow-[0_10px_40px_rgba(0,0,0,0.9)]">
       <nav
         aria-label="Global"
         className="mx-auto flex w-full items-center justify-between p-6 lg:px-8 container-max-width"
@@ -23,7 +23,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a
             href="#"
-            className="-m-1.5 p-1.5 text-[1.75rem] text-[#006645] hover:text-[#00A97C]"
+            className="-m-1.5 p-1.5 text-[1.75rem] text-[#4091f9] hover:text-[#f1f1e6]"
             aria-label="ANP"
           >
             ☺
@@ -40,7 +40,7 @@ export default function Header() {
           </button>
         </div>
         {/* Desktop Menu */}
-        <PopoverGroup className="hidden lg:flex lg:gap-x-12 text-[#006645]">
+        <PopoverGroup className="hidden lg:flex lg:gap-x-12 text-[#4091f9]">
           {links.map((link) => (
             <a
               key={link.name}

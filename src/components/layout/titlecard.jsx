@@ -12,10 +12,9 @@ const TitleCard = () => {
   };
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
-      {/* Video Background */}
+    <div className="relative w-full h-screen overflow-hidden p-2">
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover z-0 border-y-8 border-[#006645]"
+        className="absolute top-0 left-0 w-full h-full object-cover z-0 border-y-8 border-[#2f3e5d]"
         autoPlay
         loop
         muted
@@ -24,14 +23,12 @@ const TitleCard = () => {
       </video>
 
       {/* Overlay Content */}
-      <div className="relative z-10 flex flex-col justify-center items-center h-full text-white">
+      <div className="relative z-10 flex flex-col justify-center items-center h-full text-[#f6f9ff]">
         <div
           className="relative group text-center cursor-pointer"
           onClick={() => setIsTitleClicked(true)}
         >
-          <h1
-            className={`flex flex-col text-white my-4 text-[6rem] font-extrabold drop-shadow-2xl ease-in-out transform transition-all whitespace-nowrap`}
-          >
+          <h1 className="flex flex-col text-[#f6f9ff] my-4 text-[10rem] font-bebas font-extrabold drop-shadow-2xl ease-in-out transform transition-all whitespace-nowrap">
             {/* "WHAT DO YOU GET" SLIDES OUT LEFT, INNOVATIVE SLIDES IN */}
             <div className="inline-block">
               <h2 className="flex justify-between w-full">
@@ -45,7 +42,7 @@ const TitleCard = () => {
                   WHAT DO YOU GET
                 </span>
                 <span
-                  className={`text-[6rem] font-bold transition-all duration-700 ease-in-out transform text-right ${
+                  className={`text-[10rem] font-bebas font-bold transition-all duration-700 ease-in-out transform text-right ${
                     isTitleClicked
                       ? "-translate-x-20 opacity-100 "
                       : "translate-x-full opacity-100 text-transparent bg-clip-text bg-gradient-to-r from-black/50 to-white/50"
@@ -60,7 +57,7 @@ const TitleCard = () => {
             <div className="inline-block">
               <h2 className="flex justify-between w-full">
                 <span
-                  className={`duration-700 text-left ${
+                  className={`duration-700 text-left  ${
                     isTitleClicked
                       ? "-translate-x-full opacity-100 text-transparent bg-clip-text bg-gradient-to-r from-white/50 to-black/50"
                       : "translate-x-20 opacity-100"
@@ -69,7 +66,7 @@ const TitleCard = () => {
                   WHEN YOU CROSS
                 </span>
                 <span
-                  className={`text-[6rem] font-bold transition-all duration-700 ease-in-out transform text-right ${
+                  className={`text-[10rem] font-bebas font-bold transition-all duration-700 ease-in-out transform text-right ${
                     isTitleClicked
                       ? "-translate-x-20 opacity-100 "
                       : "translate-x-full opacity-100 text-transparent bg-clip-text bg-gradient-to-r from-black/50 to-white/50"
@@ -93,7 +90,7 @@ const TitleCard = () => {
                   A VFX ARTIST AND DEVELOPER
                 </span>
                 <span
-                  className={`text-[6rem] font-bold transition-all duration-700 ease-in-out transform text-right ${
+                  className={`text-[10rem] font-bebas font-bold transition-all duration-700 ease-in-out transform text-right ${
                     isTitleClicked
                       ? "-translate-x-20 opacity-100 "
                       : "translate-x-full opacity-100 text-transparent bg-clip-text bg-gradient-to-r from-black/50 to-white/50"
@@ -104,17 +101,6 @@ const TitleCard = () => {
               </h2>
             </div>
           </h1>
-
-          {/* Title 3 IGNORE FOR NOW */}
-          {/* <h2
-            className={`mt-4 text-[#00A97C] transition-all duration-500 transform ${
-              isTitleClicked
-                ? "group-hover:opacity-100 group-hover:translate-y-0"
-                : "opacity-0 group-hover:opacity-0 group-hover:translate-y-4"
-            }`}
-          >
-            {titles.title3}
-          </h2> */}
         </div>
       </div>
 

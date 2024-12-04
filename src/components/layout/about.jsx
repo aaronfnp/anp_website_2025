@@ -64,13 +64,13 @@ function About() {
 
   return (
     <div className="about-section relative h-[60vh] pt-[20vh]">
-      <h1 className="text-2xl text-left font-extrabold">about.</h1>
+      <h1 className=" text-left font-extrabold ">about.</h1>
       <div className="flex justify-start items-start space-x-8 h-full">
-        <div className="flex flex-col w-1/2 text-left">
+        <div className="flex flex-col w-1/2 text-left text-[#f6f9ff]">
           <h2>{description}</h2>
           <h2>
-            <span className="font-bold text-green-600 italic">
-              More than anything,{" "}
+            <span className="font-bold text-[#4091f9] italic">
+              more than anything,{" "}
             </span>{" "}
             <br></br>I want to build practical solutions that{" "}
             <span className="underline">genuinely</span> help people.
@@ -85,7 +85,9 @@ function About() {
                 className="flex flex-col justify-start items-center w-16 h-24"
               >
                 <img src={icon.src} alt={icon.alt} className="w-16 h-16 m-2" />
-                <h3 className="text-center text-sm">{icon.alt}</h3>
+                <h3 className="text-center text-sm text-[#f6f9ff]">
+                  {icon.alt}
+                </h3>
               </div>
             ))}
           </div>
