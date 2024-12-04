@@ -38,7 +38,7 @@ const TitleCard = () => {
                 <span
                   className={`duration-700 text-left ${
                     isTitleClicked
-                      ? "-translate-x-full opacity-100"
+                      ? "-translate-x-full opacity-100 text-transparent bg-clip-text bg-gradient-to-r from-white/50 to-black/50"
                       : "translate-x-20 opacity-100"
                   }`}
                 >
@@ -47,8 +47,8 @@ const TitleCard = () => {
                 <span
                   className={`text-[6rem] font-bold transition-all duration-700 ease-in-out transform text-right ${
                     isTitleClicked
-                      ? "-translate-x-20 opacity-100"
-                      : "translate-x-full opacity-100"
+                      ? "-translate-x-20 opacity-100 "
+                      : "translate-x-full opacity-100 text-transparent bg-clip-text bg-gradient-to-r from-black/50 to-white/50"
                   }`}
                 >
                   {titles.title1}
@@ -62,7 +62,7 @@ const TitleCard = () => {
                 <span
                   className={`duration-700 text-left ${
                     isTitleClicked
-                      ? "-translate-x-full opacity-100"
+                      ? "-translate-x-full opacity-100 text-transparent bg-clip-text bg-gradient-to-r from-white/50 to-black/50"
                       : "translate-x-20 opacity-100"
                   }`}
                 >
@@ -71,8 +71,8 @@ const TitleCard = () => {
                 <span
                   className={`text-[6rem] font-bold transition-all duration-700 ease-in-out transform text-right ${
                     isTitleClicked
-                      ? "-translate-x-20 opacity-100"
-                      : "translate-x-full opacity-100"
+                      ? "-translate-x-20 opacity-100 "
+                      : "translate-x-full opacity-100 text-transparent bg-clip-text bg-gradient-to-r from-black/50 to-white/50"
                   }`}
                 >
                   {titles.title2}
@@ -86,7 +86,7 @@ const TitleCard = () => {
                 <span
                   className={`duration-700 text-left ${
                     isTitleClicked
-                      ? "-translate-x-[120%] opacity-100"
+                      ? "-translate-x-full opacity-100 text-transparent bg-clip-text bg-gradient-to-r from-white/50 to-black/50"
                       : "translate-x-20 opacity-100"
                   }`}
                 >
@@ -95,8 +95,8 @@ const TitleCard = () => {
                 <span
                   className={`text-[6rem] font-bold transition-all duration-700 ease-in-out transform text-right ${
                     isTitleClicked
-                      ? "-translate-x-20 opacity-100"
-                      : "translate-x-full opacity-100"
+                      ? "-translate-x-20 opacity-100 "
+                      : "translate-x-full opacity-100 text-transparent bg-clip-text bg-gradient-to-r from-black/50 to-white/50"
                   }`}
                 >
                   {titles.title3}
