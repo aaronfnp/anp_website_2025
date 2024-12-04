@@ -35,7 +35,7 @@ function App() {
     {
       title: "GET BACK TO WORK",
       description:
-        "a 3d spot-the-difference game set in an office environment built in unity.",
+        "a 3d spot-the-difference game set in an office environment built in unity. currently unreleased.",
       tech: "Unity, C#, Blender",
       linkGit: "",
       linkApp: "",
