@@ -19,15 +19,15 @@ function About() {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
       alt: "C#",
     },
+    {
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+      alt: "Python",
+    },
 
     // Frameworks/Tools
     {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
       alt: "React",
-    },
-    {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-      alt: "Express",
     },
     {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",

@@ -75,7 +75,7 @@ export default function Contact() {
               >
                 <img
                   className="object-cover h-10 w-10 mr-1"
-                  src="https://img.icons8.com/?size=100&id=12599&format=png&color=92A0FF"
+                  src="https://img.icons8.com/?size=100&id=12599&format=png&color=f1f1e6"
                   alt="GitHub Profile"
                 />
               </a>
@@ -85,7 +85,7 @@ export default function Contact() {
               >
                 <img
                   className="object-cover h-10 w-10"
-                  src="https://img.icons8.com/?size=100&id=60444&format=png&color=92A0FF"
+                  src="https://img.icons8.com/?size=100&id=60444&format=png&color=f1f1e6"
                   alt="LinkedIn Profile"
                 />
               </a>

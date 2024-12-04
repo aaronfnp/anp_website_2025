@@ -1,7 +1,22 @@
+import { useState } from "react";
+import Popout from "./imagepopout";
+
 const ProjectContainer = ({ projects }) => {
+  const [isPopoutOpen, setPopoutOpen] = useState(false);
+  const [imageSrc, setImageSrc] = useState(""); // State to hold the image source for popout
+  const [altText, setAltText] = useState(""); // State to hold the alt text for popout
+
+  const openPopout = (src, alt) => {
+    setImageSrc(src);
+    setAltText(alt);
+    setPopoutOpen(true);
+  };
+
+  const closePopout = () => setPopoutOpen(false);
+
   return (
     <div>
-      <h1 className=" text-left font-extrabold">projects.</h1>
+      <h1 className="text-left font-extrabold">projects.</h1>
       <div className="flex flex-wrap justify-between my-8 min-h-[90vh]">
         {projects.map((project, index) => (
           // PROJECT CONTAINER
@@ -10,7 +25,12 @@ const ProjectContainer = ({ projects }) => {
             className="flex flex-col items-center justify-center w-full sm:w-[45%] lg:w-[35%]"
           >
             {/* IMAGE */}
-            <div className="w-full h-[200px] flex items-center justify-center drop-shadow-md">
+            <div
+              className="w-full h-[200px] flex items-center justify-center drop-shadow-md cursor-pointer"
+              onClick={() =>
+                openPopout(project.linkImg, `${project.title} Thumbnail`)
+              }
+            >
               <img
                 className="object-cover h-full w-full rounded"
                 src={project.linkImg}
@@ -24,8 +44,8 @@ const ProjectContainer = ({ projects }) => {
                 {project.title}
               </h2>
               <p className="text-md text-[#f6f9ff]">{project.description}</p>
-              <div className="mt-4 w-[30%] h-[4%] bg-[#f1f1e6]"></div>
-              <h4 className="text-md mt-1 font-bold text-[#4091f9]">
+              <div className="mt-4 w-[40%] h-[.5%] bg-[#f1f1e6]"></div>
+              <h4 className="text-md mt-2 font-bold text-[#4091f9]">
                 {project.tech}
               </h4>
               <div className="flex justify-start">
@@ -55,6 +75,14 @@ const ProjectContainer = ({ projects }) => {
           </div>
         ))}
       </div>
+
+      {/* Popout modal for image */}
+      <Popout
+        isOpen={isPopoutOpen}
+        onClose={closePopout}
+        imageSrc={imageSrc}
+        altText={altText}
+      />
     </div>
   );
 };
