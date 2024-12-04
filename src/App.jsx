@@ -55,7 +55,7 @@ function App() {
   return (
     <div className="min-h-screen w-full">
       <div className="w-full min-h-screen">
-        <div className="container-max-width hero-container">
+        <div className=" hero-container">
           <Titlecard />
         </div>
         <Header />

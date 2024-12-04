@@ -1,47 +1,127 @@
 import { useState } from "react";
+import ANPReel from "../../assets/videos/ANPReel.mp4";
 
-function Titlecard() {
+const TitleCard = () => {
   const [isTitleClicked, setIsTitleClicked] = useState(false);
 
   const titles = {
-    title2: "code that looks as good as it works.",
-    title3: "ALSO ME, a guy who's obsessed with the smallest details...",
+    title1: "INNOVATIVE",
+    title2: "RESPONSIVE",
+    title3: "LOGICAL",
+    title4: "ALSO ME, someone obsessed with the details",
   };
 
   return (
-    <div className="flex flex-col container">
-      <div className="text-md font-bold text-gray-800 mb-4 cursor-pointer">
+    <div className="relative w-full h-screen overflow-hidden">
+      {/* Video Background */}
+      <video
+        className="absolute top-0 left-0 w-full h-full object-cover z-0 border-y-8 border-[#006645]"
+        autoPlay
+        loop
+        muted
+      >
+        <source src={ANPReel} type="video/mp4" />
+      </video>
+
+      {/* Overlay Content */}
+      <div className="relative z-10 flex flex-col justify-center items-center h-full text-white">
         <div
-          className="relative group mx-auto text-center"
+          className="relative group text-center cursor-pointer"
           onClick={() => setIsTitleClicked(true)}
         >
-          {/* Title 1 ALWAYS SHOWS */}
-          <h1 className="my-4 leading-relaxed">
-            WHAT DO YOU GET <br />
-            WHEN A VFX ARTIST <br />
-            BECOMES A <br />
-            DEVELOPER <br />?
+          <h1
+            className={`flex flex-col text-white my-4 text-[6rem] font-extrabold drop-shadow-2xl ease-in-out transform transition-all whitespace-nowrap`}
+          >
+            {/* "WHAT DO YOU GET" SLIDES OUT LEFT, INNOVATIVE SLIDES IN */}
+            <div className="inline-block">
+              <h2 className="flex justify-between w-full">
+                <span
+                  className={`duration-700 text-left ${
+                    isTitleClicked
+                      ? "-translate-x-full opacity-100"
+                      : "translate-x-20 opacity-100"
+                  }`}
+                >
+                  WHAT DO YOU GET
+                </span>
+                <span
+                  className={`text-[6rem] font-bold transition-all duration-700 ease-in-out transform text-right ${
+                    isTitleClicked
+                      ? "-translate-x-20 opacity-100"
+                      : "translate-x-full opacity-100"
+                  }`}
+                >
+                  {titles.title1}
+                </span>
+              </h2>
+            </div>
+
+            {/* "WHEN YOU CROSS" SLIDES OUT LEFT, RESPONSIVE SLIDES IN */}
+            <div className="inline-block">
+              <h2 className="flex justify-between w-full">
+                <span
+                  className={`duration-700 text-left ${
+                    isTitleClicked
+                      ? "-translate-x-full opacity-100"
+                      : "translate-x-20 opacity-100"
+                  }`}
+                >
+                  WHEN YOU CROSS
+                </span>
+                <span
+                  className={`text-[6rem] font-bold transition-all duration-700 ease-in-out transform text-right ${
+                    isTitleClicked
+                      ? "-translate-x-20 opacity-100"
+                      : "translate-x-full opacity-100"
+                  }`}
+                >
+                  {titles.title2}
+                </span>
+              </h2>
+            </div>
+
+            {/* "A VFX ARTIST..." SLIDES OUT LEFT, LOGICAL SLIDES IN */}
+            <div className="inline-block">
+              <h2 className="flex justify-between w-full">
+                <span
+                  className={`duration-700 text-left ${
+                    isTitleClicked
+                      ? "-translate-x-[120%] opacity-100"
+                      : "translate-x-20 opacity-100"
+                  }`}
+                >
+                  A VFX ARTIST AND DEVELOPER
+                </span>
+                <span
+                  className={`text-[6rem] font-bold transition-all duration-700 ease-in-out transform text-right ${
+                    isTitleClicked
+                      ? "-translate-x-20 opacity-100"
+                      : "translate-x-full opacity-100"
+                  }`}
+                >
+                  {titles.title3}
+                </span>
+              </h2>
+            </div>
           </h1>
 
-          {/* Title 2 APPEARS ON HOVER */}
-          <h2 className="left-0 top-full opacity-0 group-hover:opacity-100 text-lg group-hover:text-lg transition-all duration-600">
-            {titles.title2}
-          </h2>
-
-          {/* Title 3 APPEARS ON CLICK */}
-          <h2
-            className={`left-0 top-full text-xs text-[#00A97C] transition-all opacity-0 duration-400 ${
+          {/* Title 3 IGNORE FOR NOW */}
+          {/* <h2
+            className={`mt-4 text-[#00A97C] transition-all duration-500 transform ${
               isTitleClicked
-                ? "group-hover:opacity-100"
-                : "group-hover:opacity-0"
-            } `}
+                ? "group-hover:opacity-100 group-hover:translate-y-0"
+                : "opacity-0 group-hover:opacity-0 group-hover:translate-y-4"
+            }`}
           >
             {titles.title3}
-          </h2>
+          </h2> */}
         </div>
       </div>
+
+      {/* Optional: Overlay for styling (e.g., darkening the background) */}
+      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 z-5"></div>
     </div>
   );
-}
+};
 
-export default Titlecard;
+export default TitleCard;
