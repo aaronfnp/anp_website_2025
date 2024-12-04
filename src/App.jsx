@@ -14,18 +14,18 @@ import TalentTrees from "./assets/images/TalentTrees.png";
 function App() {
   const projects = [
     {
-      title: "Talent-Trees",
+      title: "TALENT-TREES",
       description:
-        "A dynamic web application for creating and sharing custom talent trees, designed for gamers to personalize skill paths.",
+        "a dynamic web application for creating and sharing custom talent trees, designed for gamers to personalize skill paths.",
       tech: "React, Firebase, Vite, Tailwind",
       linkGit: "https://github.com/chriscain/talent-trees",
       linkApp: "",
       linkImg: TalentTrees,
     },
     {
-      title: "Colonel Kernel",
+      title: "COLONEL KERNEL",
       description:
-        'A clicker game where users earn "corn" to purchase upgrades, within a team of four.',
+        'a clicker game where users earn "corn" to purchase upgrades, within a team of four.',
       tech: "MongoDB, Express, React, Node.js",
       linkGit: "https://github.com/aaronfnp/kernel_colonel",
       linkApp: "https://kernelcolonel-363e070e95f0.herokuapp.com/",
@@ -33,18 +33,18 @@ function App() {
         "https://raw.githubusercontent.com/aaronfnp/kernel_colonel/main/public/game-interface.png",
     },
     {
-      title: "Get Back To Work",
+      title: "GET BACK TO WORK",
       description:
-        "A 3D spot-the-difference game set in an office environment built in Unity",
+        "a 3d spot-the-difference game set in an office environment built in unity.",
       tech: "Unity, C#, Blender",
       linkGit: "",
       linkApp: "",
       linkImg: GetBackToWork,
     },
     {
-      title: "Ten-Second Torch",
+      title: "TEN-SECOND TORCH",
       description:
-        "A '90s inspired horror game, where you have 10 seconds to keep your torch lit between campfires. Created for Ludum Dare #51.",
+        "a '90s inspired horror game, where you have 10 seconds to keep your torch lit between campfires. created for ludum dare #51.",
       tech: "Unity, C#",
       linkGit: "",
       linkApp: "https://aaronfnp.itch.io/tstorch",
