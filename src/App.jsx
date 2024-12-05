@@ -78,7 +78,20 @@ function App() {
                   <ProjectContainer projects={projects} />
                 </div>
               </section>
-              <StyledBreak side={"right"} />
+              {/* <StyledBreak side={"right"} /> */}
+              <div className="mt-0 mb-10">
+                <a
+                  href="https://anpv.webnode.page/"
+                  className="flex flex-col items-center justify-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="text-[#f1f1e6] hover:text-[#4091f9] text-xl">
+                    <h2>WANT TO SEE MORE OF MY VIDEO WORK?</h2>
+                    <h2>CLICK HERE</h2>
+                  </div>
+                </a>
+              </div>
 
               <section id="contact">
                 <div className="container-max-width">

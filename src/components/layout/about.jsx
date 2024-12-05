@@ -63,7 +63,7 @@ function About() {
 
   return (
     <div className="about-section relative h-[60vh] pt-[20vh]">
-      <h1 className=" text-left font-extrabold ">ABOUT</h1>
+      <h1 className=" text-left ">ABOUT</h1>
       <div className="flex justify-start items-start space-x-8 h-full">
         <div className="flex flex-col w-1/2 text-left text-[#f6f9ff] text-xl">
           <h2>{description}</h2>

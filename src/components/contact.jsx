@@ -38,7 +38,7 @@ export default function Contact() {
 
   return (
     <div className="relative h-[75vh] pt-[2vh]">
-      <h1 className=" ml-6 text-left font-extrabold">CONTACT</h1>
+      <h1 className=" ml-6 text-left ">CONTACT</h1>
       <div className="isolate px-6">
         {/* Submitting Dialog */}
         <DialogWindow

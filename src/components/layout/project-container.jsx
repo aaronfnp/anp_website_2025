@@ -18,7 +18,7 @@ const ProjectContainer = ({ projects }) => {
 
   return (
     <div>
-      <h1 className="text-left font-extrabold">PROJECTS</h1>
+      <h1 className="text-left">PROJECTS</h1>
       <div className="flex flex-wrap justify-between my-4 min-h-[90vh]">
         {projects.map((project, index) => (
           // PROJECT CONTAINER

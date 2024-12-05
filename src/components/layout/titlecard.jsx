@@ -44,7 +44,7 @@ const TitleCard = () => {
                     WHAT DO YOU GET
                   </span>
                   <span
-                    className={`transition-all duration-700 ease-in-out transform text-right ${
+                    className={`transition-all duration-700 ease-in-out transform text-right cursor-default ${
                       isTitleClicked
                         ? "-translate-x-8 md:-translate-x-20 opacity-100"
                         : "translate-x-full opacity-0 text-transparent bg-clip-text bg-gradient-to-r from-black/50 to-white/50 opacity-0"
@@ -68,7 +68,7 @@ const TitleCard = () => {
                     WHEN YOU CROSS
                   </span>
                   <span
-                    className={`transition-all duration-700 ease-in-out transform text-right ${
+                    className={`transition-all duration-700 ease-in-out transform text-right cursor-default	 ${
                       isTitleClicked
                         ? "-translate-x-8 md:-translate-x-20 opacity-100"
                         : "translate-x-full opacity-0 text-transparent bg-clip-text bg-gradient-to-r from-black/50 to-white/50 opacity-0"
@@ -92,7 +92,7 @@ const TitleCard = () => {
                     A VFX ARTIST AND DEVELOPER?
                   </span>
                   <span
-                    className={`transition-all duration-700 ease-in-out transform text-right ${
+                    className={`transition-all duration-700 ease-in-out transform text-right cursor-default	 ${
                       isTitleClicked
                         ? "-translate-x-8 md:-translate-x-20 opacity-100 "
                         : "translate-x-full opacity-0 text-transparent bg-clip-text bg-gradient-to-r from-black/50 to-white/50 opacity-0"
