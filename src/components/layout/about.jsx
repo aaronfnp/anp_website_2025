@@ -66,7 +66,7 @@ function About() {
     <div className="about-section relative h-[60vh] pt-[20vh]">
       <h1 className=" text-left font-extrabold ">about.</h1>
       <div className="flex justify-start items-start space-x-8 h-full">
-        <div className="flex flex-col w-1/2 text-left text-[#f6f9ff]">
+        <div className="flex flex-col w-1/2 text-left text-[#f6f9ff] text-l">
           <h2>{description}</h2>
           <h2>
             <span className="font-bold text-[#4091f9] italic">

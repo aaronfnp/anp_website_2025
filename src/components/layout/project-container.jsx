@@ -26,7 +26,7 @@ const ProjectContainer = ({ projects }) => {
           >
             {/* IMAGE */}
             <div
-              className="w-full h-[200px] flex items-center justify-center drop-shadow-md cursor-pointer"
+              className="w-full h-[200px] flex items-center justify-center drop-shadow-md cursor-pointer brightness-90 border-0 border-[#4091f9] hover:brightness-110 hover:border-2 transition-all"
               onClick={() =>
                 openPopout(project.linkImg, `${project.title} Thumbnail`)
               }
