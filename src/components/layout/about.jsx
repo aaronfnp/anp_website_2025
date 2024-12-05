@@ -35,7 +35,7 @@ function About() {
     },
     {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      alt: "Tailwind CSS",
+      alt: "TailwindCSS",
     },
 
     // Databases
@@ -78,17 +78,14 @@ function About() {
         </div>
 
         <div className="w-1/2">
-          <div className="grid grid-cols-6 gap-4 items-start xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+          <div className="flex flex-wrap items-start">
             {icons.map((icon, index) => (
-              <div
+              <h3
                 key={index}
-                className="flex flex-col justify-start items-center w-16 h-24"
+                className="text-center text-[4em] text-[#2f3e5d] hover:grayscale-0 grayscale font-bebas  leading-none"
               >
-                <img src={icon.src} alt={icon.alt} className="w-16 h-16 m-2" />
-                <h3 className="text-center text-sm text-[#f6f9ff]">
-                  {icon.alt}
-                </h3>
-              </div>
+                {icon.alt}
+              </h3>
             ))}
           </div>
         </div>
