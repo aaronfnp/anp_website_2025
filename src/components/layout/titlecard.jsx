@@ -38,7 +38,7 @@ const TitleCard = () => {
                     className={`duration-700 text-left ${
                       isTitleClicked
                         ? "-translate-x-full opacity-100 text-transparent bg-clip-text bg-gradient-to-r from-white/50 to-black/50 opacity-0"
-                        : "translate-x-8 md:translate-x-20 opacity-100"
+                        : "translate-x-8 md:translate-x-20 opacity-100 group-hover:text-[#4091f9]"
                     } drop-shadow-4xl`}
                   >
                     WHAT DO YOU GET
@@ -62,7 +62,7 @@ const TitleCard = () => {
                     className={`duration-700 text-left ${
                       isTitleClicked
                         ? "-translate-x-full opacity-100 text-transparent bg-clip-text bg-gradient-to-r from-white/50 to-black/50 opacity-0"
-                        : "translate-x-8 md:translate-x-20 opacity-100"
+                        : "translate-x-8 md:translate-x-20 opacity-100 group-hover:text-[#4091f9]"
                     } drop-shadow-4xl`}
                   >
                     WHEN YOU CROSS
@@ -86,7 +86,7 @@ const TitleCard = () => {
                     className={`duration-700 text-left ${
                       isTitleClicked
                         ? "-translate-x-full opacity-100 text-transparent bg-clip-text bg-gradient-to-r from-white/50 to-black/50 opacity-0"
-                        : "translate-x-8 md:translate-x-20 opacity-100"
+                    : "translate-x-8 md:translate-x-20 opacity-100 group-hover:text-[#4091f9]"
                     } drop-shadow-4xl`}
                   >
                     A VFX ARTIST AND DEVELOPER
