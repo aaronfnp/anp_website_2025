@@ -23,7 +23,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a
             href="#"
-            className="-m-1.5 pl-1.5 text-[3rem] text-[#4091f9]  hover:text-[#f1f1e6]"
+            className="-m-1.5 pl-1.5 text-[3rem] text-[#4091f9]  hover:text-[#f1f1e6] tracking-tighter"
             aria-label="ANP"
           >
             ANP

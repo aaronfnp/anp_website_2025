@@ -11,8 +11,6 @@ import {
   ExclamationTriangleIcon,
 } from "@heroicons/react/24/outline";
 
-import TenSecondTorch from "../assets/images/TalentTrees.png";
-
 export default function DialogWindow({
   isDialogOpen,
   setIsDialogOpen,
@@ -44,8 +42,7 @@ export default function DialogWindow({
               {title === "Error" ? (
                 <ExclamationTriangleIcon className="h-6 w-6 text-red-600" />
               ) : (
-                // <ChatBubbleLeftEllipsisIcon className="h-6 w-6 text-green-600" />
-                <img src={TenSecondTorch}></img>
+                <ChatBubbleLeftEllipsisIcon className="h-6 w-6 text-green-600" />
               )}
             </div>
             <DialogTitle

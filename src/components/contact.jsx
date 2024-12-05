@@ -59,7 +59,7 @@ export default function Contact() {
         />
         <div className="flex flex-col lg:flex-row">
           {/* Left Column: Timer and Text */}
-          <div className="lg:w-1/2 flex flex-col text-left text-[#f6f9ff]">
+          <div className="lg:w-1/2 flex flex-col text-left text-[#f1f1e6] mt-2">
             <Timer />
             <h3 className="mt-5 font-thin">AARON NELSON-PURCELL</h3>
             <a
@@ -72,6 +72,8 @@ export default function Contact() {
               <a
                 href="https://github.com/aaronfnp"
                 className="flex items-center"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <img
                   className="object-cover h-10 w-10 mr-2"
@@ -82,9 +84,11 @@ export default function Contact() {
               <a
                 href="https://www.linkedin.com/in/aaronnp/"
                 className="flex items-center"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <img
-                  className="object-cover h-10 w-10 "
+                  className="object-cover h-10 w-10"
                   src="https://img.icons8.com/?size=100&id=60444&format=png&color=f1f1e6"
                   alt="LinkedIn Profile"
                 />
@@ -121,7 +125,7 @@ export default function Contact() {
                   type="text"
                   required
                   autoComplete="name"
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#f1f1e6] placeholder:text-gray-40 opacity-90"
+                  className="block w-full rounded-md bg-[#f1f1e6] px-3.5 py-2 text-base text-gray-900 placeholder:text-gray-40 opacity-90"
                 />
               </div>
             </div>
@@ -141,7 +145,7 @@ export default function Contact() {
                   type="email"
                   required
                   autoComplete="email"
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#f1f1e6] placeholder:text-gray-400 opacity-90"
+                  className="block w-full rounded-md bg-[#f1f1e6] px-3.5 py-2 text-base text-gray-900 placeholder:text-gray-40 opacity-90"
                 />
               </div>
             </div>
@@ -160,7 +164,7 @@ export default function Contact() {
                   name="message"
                   rows={8}
                   required
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#f1f1e6] placeholder:text-gray-400 opacity-90"
+                  className="block w-full rounded-md bg-[#f1f1e6] px-3.5 py-2 text-base text-gray-900 placeholder:text-gray-40 opacity-90"
                 />
               </div>
             </div>

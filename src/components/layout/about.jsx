@@ -21,40 +21,40 @@ function About() {
     },
     {
       //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-      text: "Python",
+      text: "PYTHON",
     },
 
     // Frameworks/Tools
     {
       //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      text: "React",
-    },
-    {
-      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-      text: "Node.js",
+      text: "REACT",
     },
     {
       //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      text: "TailwindCSS",
+      text: "TAILWIND CSS",
+    },
+    {
+      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+      text: "NODE.JS",
     },
 
     // Version Control
     {
       //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-      text: "Git",
+      text: "GIT",
     },
     // Databases
     {
       //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-      text: "MongoDB",
+      text: "MONGODB",
     },
     {
       //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg",
-      text: "Mongoose",
+      text: "MONGOOSE",
     },
     {
       //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
-      text: "Firebase",
+      text: "FIREBASE",
     },
   ];
 
@@ -81,7 +81,7 @@ function About() {
             {tech.map((icon, index) => (
               <h3
                 key={index}
-                className="text-center text-[3.5em] text-[#2f3e5d] hover:grayscale-0 grayscale leading-none"
+                className="text-center text-[3.5em] text-[#2f3e5d] hover:grayscale-0 grayscale leading-none italic"
               >
                 {icon.text}
               </h3>

@@ -4,6 +4,8 @@ import Popout from "./imagepopout";
 const ProjectContainer = ({ projects }) => {
   const [isPopoutOpen, setPopoutOpen] = useState(false);
   const [imageSrc, setImageSrc] = useState(""); // State to hold the image source for popout
+  const [selectedProject, setSelectedProject] = useState({}); // State to hold the image source for popout
+
   const [altText, setAltText] = useState(""); // State to hold the alt text for popout
 
   const openPopout = (src, alt) => {
@@ -27,9 +29,7 @@ const ProjectContainer = ({ projects }) => {
             {/* IMAGE */}
             <div
               className="w-full h-[200px] flex items-center justify-center drop-shadow-md cursor-pointer brightness-90 border-0 border-[#4091f9] hover:brightness-110 hover:border-2 transition-all"
-              onClick={() =>
-                openPopout(project.linkImg, `${project.title} Thumbnail`)
-              }
+              onClick={() => openPopout(project.linkImg, `${project.title}`)}
             >
               <img
                 className="object-cover h-full w-full rounded "
@@ -82,6 +82,7 @@ const ProjectContainer = ({ projects }) => {
         onClose={closePopout}
         imageSrc={imageSrc}
         altText={altText}
+        title={projects.title}
       />
     </div>
   );
