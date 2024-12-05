@@ -121,7 +121,7 @@ export default function Contact() {
                   type="text"
                   required
                   autoComplete="name"
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#f1f1e6] placeholder:text-gray-400"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#f1f1e6] placeholder:text-gray-40 opacity-90"
                 />
               </div>
             </div>
@@ -141,7 +141,7 @@ export default function Contact() {
                   type="email"
                   required
                   autoComplete="email"
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#f1f1e6] placeholder:text-gray-400"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#f1f1e6] placeholder:text-gray-400 opacity-90"
                 />
               </div>
             </div>
@@ -160,7 +160,7 @@ export default function Contact() {
                   name="message"
                   rows={8}
                   required
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#f1f1e6] placeholder:text-gray-400"
+                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-8 -outline-offset-1 outline-[#f1f1e6] placeholder:text-gray-400 opacity-90"
                 />
               </div>
             </div>
@@ -169,9 +169,9 @@ export default function Contact() {
             <div className="w-full mt-8">
               <button
                 type="submit"
-                className="block w-full rounded-md bg-[#4091f9] px-3.5 py-2.5 text-center text-sm font-bold text-[#f1f1e6] shadow-sm hover:bg-[#006645] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#e7fdff]"
+                className="block w-full rounded-md bg-[#4091f9] px-3.5 py-2.5 text-center text-sm font-bold text-[#f1f1e6] shadow-sm hover:bg-[#2f3e5d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#e7fdff]"
               >
-                contact me!
+                Contact Me!
               </button>
             </div>
           </form>

@@ -38,6 +38,11 @@ function About() {
       text: "TailwindCSS",
     },
 
+    // Version Control
+    {
+      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+      text: "Git",
+    },
     // Databases
     {
       //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
@@ -50,12 +55,6 @@ function About() {
     {
       //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
       text: "Firebase",
-    },
-
-    // Version Control
-    {
-      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-      text: "Git",
     },
   ];
 
