@@ -8,10 +8,13 @@ export default {
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
-        fade: ['"Rubik 80s Fade"', "cursive"],
-        glitch: ['"Rubik Glitch"', "cursive"],
-        spray: ['"Rubik Spray Paint"', "cursive"],
-        bebas: ["Bebas Neue", "sans-serif"],
+        futura: ['"Futura"', "sans-serif"],
+      },
+      fontWeight: {
+        avantRegular: 400,
+        avantBold: 700,
+        futuraRegular: 400,
+        futuraBold: 700,
       },
     },
   },

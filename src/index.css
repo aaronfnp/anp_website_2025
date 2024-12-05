@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: "Roboto", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Futura", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -31,6 +31,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
+  font-family: "Futura", sans-serif;
   max-width: max-w-screen-xl;
   background: #121212;
   background-image: radial-gradient(#2f3e5d 1px, transparent 0);
@@ -39,11 +40,10 @@ body {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   line-height: 1.1;
-  font-family: "Roboto";
+  font-family: "Futura";
   color: #2f3e5d;
-  
 }
 
 button {

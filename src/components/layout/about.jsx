@@ -1,61 +1,61 @@
 import React from "react";
 
 function About() {
-  const icons = [
+  const tech = [
     // Languages
     {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-      alt: "HTML5",
+      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+      text: "HTML5",
     },
     {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-      alt: "CSS3",
+      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+      text: "CSS3",
     },
     {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-      alt: "JavaScript",
+      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      text: "JavaScript",
     },
     {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
-      alt: "C#",
+      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
+      text: "C#",
     },
     {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-      alt: "Python",
+      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+      text: "Python",
     },
 
     // Frameworks/Tools
     {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      alt: "React",
+      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      text: "React",
     },
     {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-      alt: "Node.js",
+      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+      text: "Node.js",
     },
     {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      alt: "TailwindCSS",
+      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      text: "TailwindCSS",
     },
 
     // Databases
     {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-      alt: "MongoDB",
+      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+      text: "MongoDB",
     },
     {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg",
-      alt: "Mongoose",
+      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg",
+      text: "Mongoose",
     },
     {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
-      alt: "Firebase",
+      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+      text: "Firebase",
     },
 
     // Version Control
     {
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-      alt: "Git",
+      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+      text: "Git",
     },
   ];
 
@@ -64,9 +64,9 @@ function About() {
 
   return (
     <div className="about-section relative h-[60vh] pt-[20vh]">
-      <h1 className=" text-left font-extrabold ">about.</h1>
+      <h1 className=" text-left font-extrabold ">ABOUT</h1>
       <div className="flex justify-start items-start space-x-8 h-full">
-        <div className="flex flex-col w-1/2 text-left text-[#f6f9ff] text-l">
+        <div className="flex flex-col w-1/2 text-left text-[#f6f9ff] text-xl">
           <h2>{description}</h2>
           <h2>
             <span className="font-bold text-[#4091f9] italic">
@@ -79,12 +79,12 @@ function About() {
 
         <div className="w-1/2">
           <div className="flex flex-wrap items-start">
-            {icons.map((icon, index) => (
+            {tech.map((icon, index) => (
               <h3
                 key={index}
-                className="text-center text-[4em] text-[#2f3e5d] hover:grayscale-0 grayscale font-bebas  leading-none"
+                className="text-center text-[3.5em] text-[#2f3e5d] hover:grayscale-0 grayscale leading-none"
               >
-                {icon.alt}
+                {icon.text}
               </h3>
             ))}
           </div>

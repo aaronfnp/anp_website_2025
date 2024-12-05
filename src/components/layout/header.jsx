@@ -9,9 +9,9 @@ export default function Header() {
   const [active, setActive] = useState("");
 
   const links = [
-    { name: "about", href: "#about" },
-    { name: "projects", href: "#projects" },
-    { name: "contact", href: "#contact" },
+    { name: "ABOUT", href: "#about" },
+    { name: "PROJECTS", href: "#projects" },
+    { name: "CONTACT", href: "#contact" },
   ];
 
   return (
@@ -23,7 +23,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a
             href="#"
-            className="-m-1.5 pl-1.5 text-[3rem] text-[#4091f9] font-bebas hover:text-[#f1f1e6]"
+            className="-m-1.5 pl-1.5 text-[3rem] text-[#4091f9]  hover:text-[#f1f1e6]"
             aria-label="ANP"
           >
             ANP

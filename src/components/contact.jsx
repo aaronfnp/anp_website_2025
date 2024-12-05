@@ -38,7 +38,7 @@ export default function Contact() {
 
   return (
     <div className="relative h-[75vh] pt-[2vh]">
-      <h1 className=" ml-6 text-left font-extrabold">contact.</h1>
+      <h1 className=" ml-6 text-left font-extrabold">CONTACT</h1>
       <div className="isolate px-6">
         {/* Submitting Dialog */}
         <DialogWindow
@@ -100,7 +100,7 @@ export default function Contact() {
                 htmlFor="name"
                 className="block text-md font-bold text-[#4091f9] text-left"
               >
-                name:
+                Name:
               </label>
               <div className="mt-2.5">
                 <input
@@ -120,7 +120,7 @@ export default function Contact() {
                 htmlFor="email"
                 className="block text-md font-bold text-[#4091f9] text-left"
               >
-                email:
+                Email:
               </label>
               <div className="mt-2.5">
                 <input
@@ -140,7 +140,7 @@ export default function Contact() {
                 htmlFor="message"
                 className="block text-md font-bold text-[#4091f9] text-left"
               >
-                message:
+                Message:
               </label>
               <div className="mt-2.5">
                 <textarea

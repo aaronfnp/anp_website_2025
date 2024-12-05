@@ -16,8 +16,8 @@ const ProjectContainer = ({ projects }) => {
 
   return (
     <div>
-      <h1 className="text-left font-extrabold">projects.</h1>
-      <div className="flex flex-wrap justify-between my-8 min-h-[90vh]">
+      <h1 className="text-left font-extrabold">PROJECTS</h1>
+      <div className="flex flex-wrap justify-between my-4 min-h-[90vh]">
         {projects.map((project, index) => (
           // PROJECT CONTAINER
           <div
@@ -52,10 +52,10 @@ const ProjectContainer = ({ projects }) => {
                 {project.linkGit && (
                   <a
                     href={project.linkGit}
-                    className="flex items-center space-x-2"
+                    className="flex items-center space-x-4"
                   >
                     <img
-                      className="object-cover h-8 w-8"
+                      className="object-cover mr-1.5 mt-1.5 h-7 w-7"
                       src="https://img.icons8.com/?size=100&id=12599&format=png&color=f1f1e6"
                       alt="GitHub Icon"
                     />
@@ -64,7 +64,7 @@ const ProjectContainer = ({ projects }) => {
                 {project.linkApp && (
                   <a href={project.linkApp} className="flex items-center">
                     <img
-                      className="object-cover h-10 w-10"
+                      className="object-cover mr-1.5 mt-1.5 h-8 w-8"
                       src="https://img.icons8.com/?size=100&id=mVWTXxOBk0I1&format=png&color=f1f1e6"
                       alt="Application Icon"
                     />
