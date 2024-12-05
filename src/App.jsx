@@ -25,7 +25,7 @@ function App() {
     {
       title: "COLONEL KERNEL",
       description:
-        'a clicker game where users earn "corn" to purchase upgrades, within a team of four.',
+        'a clicker game where users earn "corn" to purchase upgrades.',
       tech: "MongoDB, Express, React, Node.js",
       linkGit: "https://github.com/aaronfnp/kernel_colonel",
       linkApp: "https://kernelcolonel-363e070e95f0.herokuapp.com/",

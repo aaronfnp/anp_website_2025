@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div className="relative my-4">
       {/* COLOR BAR */}
-      <div className="w-full h-[8px] bg-[#f1f1e6]"></div>
+      <div className="w-full h-[1px] bg-[#f1f1e6]"></div>
 
       {/* TEXT SECTION */}
       <div className="flex justify-between text-[#f6f9ff]">

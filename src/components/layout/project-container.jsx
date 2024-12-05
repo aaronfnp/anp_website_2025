@@ -22,7 +22,7 @@ const ProjectContainer = ({ projects }) => {
           // PROJECT CONTAINER
           <div
             key={index}
-            className="flex flex-col items-center justify-center w-full sm:w-[45%] lg:w-[35%]"
+            className="flex flex-col items-center justify-center w-full sm:w-[45%] lg:w-[45%] "
           >
             {/* IMAGE */}
             <div
@@ -32,7 +32,7 @@ const ProjectContainer = ({ projects }) => {
               }
             >
               <img
-                className="object-cover h-full w-full rounded"
+                className="object-cover h-full w-full rounded "
                 src={project.linkImg}
                 alt={`${project.title} Thumbnail`}
               />

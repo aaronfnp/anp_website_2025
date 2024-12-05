@@ -86,17 +86,17 @@ const TitleCard = () => {
                     className={`duration-700 text-left ${
                       isTitleClicked
                         ? "-translate-x-full opacity-100 text-transparent bg-clip-text bg-gradient-to-r from-white/50 to-black/50 opacity-0"
-                    : "translate-x-8 md:translate-x-20 opacity-100 group-hover:text-[#4091f9]"
+                        : "translate-x-8 md:translate-x-20 opacity-100 group-hover:text-[#4091f9]"
                     } drop-shadow-4xl`}
                   >
-                    A VFX ARTIST AND DEVELOPER
+                    A VFX ARTIST AND DEVELOPER?
                   </span>
                   <span
                     className={`transition-all duration-700 ease-in-out transform text-right ${
                       isTitleClicked
-                        ? "-translate-x-8 md:-translate-x-20 opacity-100"
+                        ? "-translate-x-8 md:-translate-x-20 opacity-100 "
                         : "translate-x-full opacity-100 text-transparent bg-clip-text bg-gradient-to-r from-black/50 to-white/50 opacity-0"
-                    } drop-shadow-4xl`}
+                    } drop-shadow-4xl `}
                   >
                     {titles.title3}
                   </span>

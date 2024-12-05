@@ -6,7 +6,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [active, setActive] = useState("about");
+  const [active, setActive] = useState("");
 
   const links = [
     { name: "about", href: "#about" },
@@ -46,10 +46,8 @@ export default function Header() {
               key={link.name}
               href={link.href}
               onClick={() => setActive(link.name)}
-              className={`text-lg font-bold transition border-b-8 -mb-2 leading-tight ${
-                active === link.name
-                  ? "border-[#e7fdff]"
-                  : "border-white hover:border-[#e7fdff]"
+              className={`text-lg font-bold transition -mb-2 leading-tight ${
+                active === link.name ? "text-white" : ""
               }`}
             >
               {link.name}
