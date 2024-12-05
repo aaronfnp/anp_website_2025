@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import Resume from "./components/layout/resume";
 import "./App.css";
 import Header from "./components/layout/header";
 import Contact from "./components/contact";
@@ -54,32 +56,41 @@ function App() {
 
   return (
     <div className="min-h-screen w-full">
-      <div className="w-full min-h-screen">
-        <div className=" hero-container">
-          <Titlecard />
-        </div>
-        <Header />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="w-full min-h-screen">
+              <div className="hero-container">
+                <Titlecard />
+              </div>
+              <Header />
 
-        <section id="about">
-          <div className="container-max-width">
-            <About />
-          </div>
-        </section>
-        <StyledBreak side={"left"} />
+              <section id="about">
+                <div className="container-max-width">
+                  <About />
+                </div>
+              </section>
+              <StyledBreak side={"left"} />
 
-        <section id="projects" className="projects-section p-8">
-          <div className="container-max-width">
-            <ProjectContainer projects={projects} />
-          </div>
-        </section>
-        <StyledBreak side={"right"} />
+              <section id="projects" className="projects-section p-8">
+                <div className="container-max-width">
+                  <ProjectContainer projects={projects} />
+                </div>
+              </section>
+              <StyledBreak side={"right"} />
 
-        <section id="contact">
-          <div className="container-max-width">
-            <Contact />
-          </div>
-        </section>
-      </div>
+              <section id="contact">
+                <div className="container-max-width">
+                  <Contact />
+                </div>
+              </section>
+            </div>
+          }
+        />
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
+
       <div className="container-max-width">
         <Footer />
       </div>

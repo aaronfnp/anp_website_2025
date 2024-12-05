@@ -74,7 +74,7 @@ export default function Contact() {
                 className="flex items-center"
               >
                 <img
-                  className="object-cover h-10 w-10 mr-1"
+                  className="object-cover h-10 w-10 mr-2"
                   src="https://img.icons8.com/?size=100&id=12599&format=png&color=f1f1e6"
                   alt="GitHub Profile"
                 />
@@ -84,9 +84,21 @@ export default function Contact() {
                 className="flex items-center"
               >
                 <img
-                  className="object-cover h-10 w-10"
+                  className="object-cover h-10 w-10 "
                   src="https://img.icons8.com/?size=100&id=60444&format=png&color=f1f1e6"
                   alt="LinkedIn Profile"
+                />
+              </a>
+              <a
+                href="/resume"
+                className="flex items-center"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="object-cover h-12 w-12"
+                  src="https://img.icons8.com/?size=100&id=wf816jDvhsuq&format=png&color=f1f1e6"
+                  alt="Resume"
                 />
               </a>
             </div>
