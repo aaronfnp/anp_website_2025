@@ -12,6 +12,7 @@ import StyledBreak from "./components/layout/styledbreak";
 import GetBackToWork from "./assets/images/GetBackToWork.png";
 import TenSecondTorch from "./assets/images/TenSecondTorch.png";
 import TalentTrees from "./assets/images/TalentTrees.png";
+import ReelThumb from "./assets/images/ReelThumb.png";
 import ANPReel from "./assets/videos/ANPReel.mp4";
 
 function App() {
@@ -59,11 +60,13 @@ function App() {
     },
     {
       title: "VFX PORTFOLIO",
-      description: "Want to see more of my video work?",
+      description:
+        "Want to have a closer look at my portfolio? Or click the link below to see my other website!",
       tech: "Adobe Creative Suite",
       linkGit: "",
       linkApp: "https://anpv.webnode.com/",
-      linkImg: ANPReel,
+      linkImg: ReelThumb,
+      // linkImg: ANPReel,
       type: "video",
     },
   ];
@@ -85,14 +88,14 @@ function App() {
                   <About />
                 </div>
               </section>
-              <StyledBreak side={"left"} />
+              <StyledBreak />
 
               <section id="projects" className="projects-section">
                 <div className="container-max-width">
                   <ProjectContainer projects={projects} />
                 </div>
               </section>
-              <StyledBreak side={"right"} />
+              <StyledBreak />
 
               <section id="contact">
                 <div className="container-max-width">

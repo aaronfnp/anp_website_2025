@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-  color: #f1f1e6;
+  color: #4091f9;
 }
 
 body {
@@ -59,12 +59,12 @@ button {
 }
 
 button:hover {
-  border-color: #f1f1e6;
+  border-color: #4091f9;
 }
 
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline-color: #4091f9;
 }
 
 @media (prefers-color-scheme: light) {
