@@ -58,7 +58,7 @@ export default function Timer() {
   return (
     <div>
       <div>
-        <h3 className="text-[#f1f1e6]">
+        <h3 className="text-[#f6f9ff]">
           You have been looking at my portfolio for:{" "}
         </h3>
         <h3 className="text-[#4091f9]">
@@ -68,7 +68,7 @@ export default function Timer() {
           {seconds} seconds
         </h3>
       </div>
-      <h3 className="text-[#f1f1e6]">
+      <h3 className="text-[#f6f9ff]">
         {days >= 1
           ? bodyText.days
           : hours >= 1

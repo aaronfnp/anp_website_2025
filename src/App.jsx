@@ -12,13 +12,14 @@ import StyledBreak from "./components/layout/styledbreak";
 import GetBackToWork from "./assets/images/GetBackToWork.png";
 import TenSecondTorch from "./assets/images/TenSecondTorch.png";
 import TalentTrees from "./assets/images/TalentTrees.png";
+import ANPReel from "./assets/videos/ANPReel.mp4";
 
 function App() {
   const projects = [
     {
       title: "TALENT-TREES",
       description:
-        "a dynamic web application for creating and sharing custom talent trees, designed for gamers to personalize skill paths.",
+        "A dynamic web application for creating and sharing custom talent trees, designed for gamers to personalize skill paths.",
       tech: "React, Firebase, Vite, Tailwind",
       linkGit: "https://github.com/chriscain/talent-trees",
       linkApp: "",
@@ -27,7 +28,7 @@ function App() {
     {
       title: "COLONEL KERNEL",
       description:
-        'a clicker game where users earn "corn" to purchase upgrades.',
+        'A clicker game where users earn "corn" to purchase upgrades.',
       tech: "MongoDB, Express, React, Node.js",
       linkGit: "https://github.com/aaronfnp/kernel_colonel",
       linkApp: "https://kernelcolonel-363e070e95f0.herokuapp.com/",
@@ -37,7 +38,7 @@ function App() {
     {
       title: "GET BACK TO WORK",
       description:
-        "a 3d spot-the-difference game set in an office environment built in unity. currently unreleased.",
+        "A 3d spot-the-difference game set in an office environment built in unity. Currently unreleased.",
       tech: "Unity, C#, Blender",
       linkGit: "",
       linkApp: "",
@@ -46,11 +47,19 @@ function App() {
     {
       title: "TEN-SECOND TORCH",
       description:
-        "a '90s inspired horror game, where you have 10 seconds to keep your torch lit between campfires. created for ludum dare #51.",
+        "A '90s inspired horror game, where you have 10 seconds to keep your torch lit between campfires. Created for ludum dare #51.",
       tech: "Unity, C#",
       linkGit: "",
       linkApp: "https://aaronfnp.itch.io/tstorch",
       linkImg: TenSecondTorch,
+    },
+    {
+      title: "VFX PORTFOLIO",
+      description: "Want to see more of my video work?",
+      tech: "Adobe Creative Suite",
+      linkGit: "",
+      linkApp: "https://anpv.webnode.com/",
+      linkImg: ANPReel.mp4,
     },
   ];
 
@@ -73,25 +82,12 @@ function App() {
               </section>
               <StyledBreak side={"left"} />
 
-              <section id="projects" className="projects-section p-8">
+              <section id="projects" className="projects-section">
                 <div className="container-max-width">
                   <ProjectContainer projects={projects} />
                 </div>
               </section>
-              {/* <StyledBreak side={"right"} /> */}
-              <div className="mt-0 mb-10">
-                <a
-                  href="https://anpv.webnode.page/"
-                  className="flex flex-col items-center justify-center"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="text-[#f1f1e6] hover:text-[#4091f9] text-xl">
-                    <h2>WANT TO SEE MORE OF MY VIDEO WORK?</h2>
-                    <h2>CLICK HERE</h2>
-                  </div>
-                </a>
-              </div>
+              <StyledBreak side={"right"} />
 
               <section id="contact">
                 <div className="container-max-width">

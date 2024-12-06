@@ -18,13 +18,15 @@ const ProjectContainer = ({ projects }) => {
 
   return (
     <div>
-      <h1 className="text-left">PROJECTS</h1>
-      <div className="flex flex-wrap justify-between my-4 min-h-[90vh]">
+      <h1 className="text-left text-3xl sm:text-3xl md:text-4xl lg:text-5xl mb-6">
+        PROJECTS
+      </h1>
+      <div className="flex flex-wrap justify-between my-4 sm:min-h-[100vh] lg:min-h-[90vh]">
         {projects.map((project, index) => (
           // PROJECT CONTAINER
           <div
             key={index}
-            className="flex flex-col items-center justify-center w-full sm:w-[45%] lg:w-[45%] "
+            className="flex flex-col items-center justify-center w-full md:w-[45%] lg:w-[45%] mt-5 "
           >
             {/* IMAGE */}
             <div
@@ -55,7 +57,7 @@ const ProjectContainer = ({ projects }) => {
                     className="flex items-center space-x-4"
                   >
                     <img
-                      className="object-cover mr-1.5 mt-1.5 h-7 w-7"
+                      className="object-cover mr-1.5 mt-1.5 mb-3 h-7 w-7"
                       src="https://img.icons8.com/?size=100&id=12599&format=png&color=f1f1e6"
                       alt="GitHub Icon"
                     />
@@ -64,7 +66,7 @@ const ProjectContainer = ({ projects }) => {
                 {project.linkApp && (
                   <a href={project.linkApp} className="flex items-center">
                     <img
-                      className="object-cover mr-1.5 mt-1.5 h-8 w-8"
+                      className="object-cover mr-1.5 mt-1.5 mb-3 h-8 w-8"
                       src="https://img.icons8.com/?size=100&id=mVWTXxOBk0I1&format=png&color=f1f1e6"
                       alt="Application Icon"
                     />

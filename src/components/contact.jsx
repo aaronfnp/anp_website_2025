@@ -38,8 +38,10 @@ export default function Contact() {
 
   return (
     <div className="relative h-[75vh] pt-[2vh]">
-      <h1 className=" ml-6 text-left ">CONTACT</h1>
-      <div className="isolate px-6">
+      <h1 className=" text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2">
+        CONTACT
+      </h1>
+      <div className="isolate">
         {/* Submitting Dialog */}
         <DialogWindow
           isDialogOpen={isSubmittingDialog}
@@ -59,51 +61,54 @@ export default function Contact() {
         />
         <div className="flex flex-col lg:flex-row">
           {/* Left Column: Timer and Text */}
-          <div className="lg:w-1/2 flex flex-col text-left text-[#f1f1e6] mt-2">
+          <div className="lg:w-1/2 flex flex-col text-left text-[#f6f9ff] mt-2">
             <Timer />
             <h3 className="mt-5 font-thin">AARON NELSON-PURCELL</h3>
             <a
               href="mailto:aaronfnp@gmail.com"
               className="font-thin hover:underline hover:font-light"
             >
-              aaronfnp@gmail.com
+              Email aaronfnp@gmail.com
             </a>
-            <div className="flex justify-start mt-1">
+            <div className="flex flex-col justify-start">
               <a
                 href="https://github.com/aaronfnp"
-                className="flex items-center"
+                className="font-thin hover:underline hover:font-light"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  className="object-cover h-10 w-10 mr-2"
-                  src="https://img.icons8.com/?size=100&id=12599&format=png&color=f1f1e6"
+                {/* <img
+                  className="object-cover h-8 w-8 mr-2"
+                  src="https://img.icons8.com/?size=100&id=12599&format=png&color=f6f9ff"
                   alt="GitHub Profile"
-                />
+                /> */}
+                <h3>GitHub @aaronfnp</h3>
               </a>
               <a
                 href="https://www.linkedin.com/in/aaronnp/"
-                className="flex items-center"
+                className="font-thin hover:underline hover:font-light"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  className="object-cover h-10 w-10"
-                  src="https://img.icons8.com/?size=100&id=60444&format=png&color=f1f1e6"
+                {/* <img
+                  className="object-cover h-8 w-8"
+                  src="https://img.icons8.com/?size=100&id=60444&format=png&color=f6f9ff"
                   alt="LinkedIn Profile"
-                />
+                /> */}
+                <h3>LinkedIn @aaronnp</h3>
               </a>
               <a
                 href="/resume"
-                className="flex items-center"
+                className="font-thin hover:underline hover:font-light"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
+                {/* <img
                   className="object-cover h-12 w-12"
-                  src="https://img.icons8.com/?size=100&id=wf816jDvhsuq&format=png&color=f1f1e6"
+                  src="https://img.icons8.com/?size=100&id=wf816jDvhsuq&format=png&color=f6f9ff"
                   alt="Resume"
-                />
+                /> */}
+                <h3>Resume PDF</h3>
               </a>
             </div>
           </div>
@@ -125,7 +130,7 @@ export default function Contact() {
                   type="text"
                   required
                   autoComplete="name"
-                  className="block w-full rounded-md bg-[#f1f1e6] px-3.5 py-2 text-base text-gray-900 placeholder:text-gray-40 opacity-90"
+                  className="block w-full rounded-md bg-[#f6f9ff] px-3.5 py-2 text-base text-gray-900 placeholder:text-gray-40 opacity-90"
                 />
               </div>
             </div>
@@ -145,7 +150,7 @@ export default function Contact() {
                   type="email"
                   required
                   autoComplete="email"
-                  className="block w-full rounded-md bg-[#f1f1e6] px-3.5 py-2 text-base text-gray-900 placeholder:text-gray-40 opacity-90"
+                  className="block w-full rounded-md bg-[#f6f9ff] px-3.5 py-2 text-base text-gray-900 placeholder:text-gray-40 opacity-90"
                 />
               </div>
             </div>
@@ -164,7 +169,7 @@ export default function Contact() {
                   name="message"
                   rows={8}
                   required
-                  className="block w-full rounded-md bg-[#f1f1e6] px-3.5 py-2 text-base text-gray-900 placeholder:text-gray-40 opacity-90"
+                  className="block w-full rounded-md bg-[#f6f9ff] px-3.5 py-2 text-base text-gray-900 placeholder:text-gray-40 opacity-90"
                 />
               </div>
             </div>

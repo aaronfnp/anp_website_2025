@@ -63,15 +63,14 @@ export default function Header() {
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-ƒ-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-[#2f3e5d] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-ƒ-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">ANP</span>
-              <img
-                alt=""
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
-              />
+            <a
+              href="#"
+              className="-m-1.5 pl-1.5 text-[3rem] text-[#4091f9]  hover:text-[#f1f1e6] tracking-tighter"
+              aria-label="ANP"
+            >
+              ANP
             </a>
             <button
               type="button"
@@ -84,20 +83,17 @@ export default function Header() {
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-white-500/10">
-              <div className="space-y-2 py-6 text-[#006645]">
+              <div className="space-y-2 py-6 text-[#4091f9]">
                 {links.map((link) => (
                   <a
                     key={link.name}
                     href={link.href}
                     onClick={() => setActive(link.name)}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-lg font-bold leading-tight transition-all hover:bg-white "
                   >
-                    {" "}
                     <span
-                      className={`font-bold border-b-8 -mb-2 leading-tight ${
-                        active === link.name
-                          ? "border-[#e7fdff]"
-                          : "border-white hover:border-[#e7fdff]"
+                      className={`${
+                        active === link.name ? "text-white " : "text-[#4091f9]"
                       }`}
                     >
                       {link.name}

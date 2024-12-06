@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="relative my-4">
+    <div className="relative mt-4 mb-10">
       {/* COLOR BAR */}
       <div className="w-full h-[1px] bg-[#f1f1e6]"></div>
 

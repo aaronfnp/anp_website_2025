@@ -1,96 +1,59 @@
 import React from "react";
 
-function About() {
+export default function About() {
   const tech = [
-    // Languages
-    {
-      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-      text: "HTML5",
-    },
-    {
-      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-      text: "CSS3",
-    },
-    {
-      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-      text: "JavaScript",
-    },
-    {
-      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
-      text: "C#",
-    },
-    {
-      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-      text: "PYTHON",
-    },
-
-    // Frameworks/Tools
-    {
-      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      text: "REACT",
-    },
-    {
-      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      text: "TAILWIND CSS",
-    },
-    {
-      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-      text: "NODE.JS",
-    },
-
-    // Version Control
-    {
-      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-      text: "GIT",
-    },
-    // Databases
-    {
-      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-      text: "MONGODB",
-    },
-    {
-      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg",
-      text: "MONGOOSE",
-    },
-    {
-      //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
-      text: "FIREBASE",
-    },
+    { text: "HTML5" },
+    { text: "CSS3" },
+    { text: "JavaScript" },
+    { text: "C#" },
+    { text: "PYTHON" },
+    { text: "REACT" },
+    { text: "TAILWINDCSS" },
+    { text: "VITE" },
+    { text: "NODE.JS" },
+    { text: "GIT" },
+    { text: "MONGODB" },
+    { text: "MONGOOSE" },
+    { text: "FIREBASE" },
+    { text: "EXPRESS" },
   ];
 
   const description =
     "I'm a software developer with a solid foundation in frontend and full-stack web development, building on my background in VFX editing. Originally my interest in video game development started as a hobby, which led me to explore Unity and C#. My experiences have helped me develop a keen eye for detail and creativity. After completing General Assembly's Software Engineering program, I've focused on honing my skills in JavaScript and React.";
 
   return (
-    <div className="about-section relative h-[60vh] pt-[20vh]">
-      <h1 className=" text-left ">ABOUT</h1>
-      <div className="flex justify-start items-start space-x-8 h-full">
-        <div className="flex flex-col w-1/2 text-left text-[#f6f9ff] text-xl">
-          <h2>{description}</h2>
+    <div className="about-section flex flex-col relative pt-8 md:pt-[10vh] lg:pt-[20vh]">
+      <h1 className="text-left text-3xl sm:text-3xl md:text-4xl lg:text-5xl mb-6">
+        ABOUT
+      </h1>
+      <div className="flex flex-col md:flex-row justify-start items-start md:space-x-8 space-y-8 md:space-y-0">
+        {/* Left Section: Description */}
+        <div className="flex flex-col w-full text-left text-[#f6f9ff] text-base sm:text-md md:text-lg lg:text-2xl ">
+          <h2 className="leading-normal">{description}</h2>
           <h2>
             <span className="font-bold text-[#4091f9] italic">
-              more than anything,{" "}
-            </span>{" "}
-            <br></br>I want to build practical solutions that{" "}
-            <span className="underline">genuinely</span> help people.
+              More than anything,{" "}
+            </span>
+            <br />I want to build practical solutions that genuinely help
+            people.
           </h2>
-        </div>
-
-        <div className="w-1/2">
-          <div className="flex flex-wrap items-start">
-            {tech.map((icon, index) => (
-              <h3
-                key={index}
-                className="text-center text-[3.5em] text-[#2f3e5d] hover:grayscale-0 grayscale leading-none italic"
-              >
-                {icon.text}
-              </h3>
-            ))}
+          {/* Tech Section */}
+          <div className="flex flex-col md:flex-row justify-start items-start md:space-x-8 space-y-8 md:space-y-0">
+            <div className="flex flex-row flex-wrap max-w-full text-left text-[#f6f9ff] sm:text-2xl md:text-3xl lg:text-4xl mt-4">
+              {tech.map((icon, index) => (
+                <h3
+                  key={index}
+                  className="flex flex-row text-[#2f3e5d] hover:grayscale-0 grayscale italic "
+                >
+                  {icon.text}
+                </h3>
+              ))}
+            </div>
           </div>
         </div>
+
+        {/* Right Section: Tech Stack */}
       </div>
     </div>
   );
 }
-
-export default About;
