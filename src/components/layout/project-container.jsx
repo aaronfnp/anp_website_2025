@@ -3,14 +3,14 @@ import Popout from "./imagepopout";
 
 const ProjectContainer = ({ projects }) => {
   const [isPopoutOpen, setPopoutOpen] = useState(false);
-  const [imageSrc, setImageSrc] = useState(""); // State to hold the image source for popout
-  const [selectedProject, setSelectedProject] = useState({}); // State to hold the image source for popout
+  const [imageSrc, setImageSrc] = useState("");
+  const [selectedProjectType, setSelectedProjectType] = useState("");
+  const [altText, setAltText] = useState("");
 
-  const [altText, setAltText] = useState(""); // State to hold the alt text for popout
-
-  const openPopout = (src, alt) => {
+  const openPopout = (src, alt, type) => {
     setImageSrc(src);
     setAltText(alt);
+    setSelectedProjectType(type);
     setPopoutOpen(true);
   };
 
@@ -31,7 +31,9 @@ const ProjectContainer = ({ projects }) => {
             {/* IMAGE */}
             <div
               className="w-full h-[200px] flex items-center justify-center drop-shadow-md cursor-pointer brightness-90 border-0 border-[#4091f9] hover:brightness-110 hover:border-2 transition-all"
-              onClick={() => openPopout(project.linkImg, `${project.title}`)}
+              onClick={() =>
+                openPopout(project.linkImg, project.title, project.type)
+              }
             >
               <img
                 className="object-cover h-full w-full rounded "
@@ -78,13 +80,12 @@ const ProjectContainer = ({ projects }) => {
         ))}
       </div>
 
-      {/* Popout modal for image */}
       <Popout
         isOpen={isPopoutOpen}
         onClose={closePopout}
         imageSrc={imageSrc}
         altText={altText}
-        title={projects.title}
+        type={selectedProjectType}
       />
     </div>
   );

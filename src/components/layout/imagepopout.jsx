@@ -6,7 +6,7 @@ import {
   DialogTitle,
 } from "@headlessui/react";
 
-const Popout = ({ isOpen, onClose, imageSrc, altText }) => {
+const Popout = ({ isOpen, onClose, imageSrc, altText, type }) => {
   return (
     <Dialog open={isOpen} onClose={onClose} className="relative z-50">
       <DialogBackdrop
@@ -27,11 +27,24 @@ const Popout = ({ isOpen, onClose, imageSrc, altText }) => {
               >
                 x
               </button>
-              <img
-                className="object-contain rounded-lg w-full h-auto"
-                src={imageSrc}
-                alt={altText}
-              />
+
+              {type === "video" ? (
+                <video
+                  className="object-contain rounded-lg w-full h-auto"
+                  src={imageSrc}
+                  controls
+                  autoPlay
+                  loop
+                  muted
+                ></video>
+              ) : (
+                <img
+                  className="object-contain rounded-lg w-full h-auto"
+                  src={imageSrc}
+                  alt={altText}
+                />
+              )}
+
               <DialogTitle
                 as="h3"
                 className="absolute bottom-0 left-0 w-full text-center text-[#4091f9] bg-black/50 py-2 text-lg font-semibold"

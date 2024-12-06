@@ -24,6 +24,7 @@ function App() {
       linkGit: "https://github.com/chriscain/talent-trees",
       linkApp: "",
       linkImg: TalentTrees,
+      type: "image",
     },
     {
       title: "COLONEL KERNEL",
@@ -34,6 +35,7 @@ function App() {
       linkApp: "https://kernelcolonel-363e070e95f0.herokuapp.com/",
       linkImg:
         "https://raw.githubusercontent.com/aaronfnp/kernel_colonel/main/public/game-interface.png",
+      type: "image",
     },
     {
       title: "GET BACK TO WORK",
@@ -43,6 +45,7 @@ function App() {
       linkGit: "",
       linkApp: "",
       linkImg: GetBackToWork,
+      type: "image",
     },
     {
       title: "TEN-SECOND TORCH",
@@ -52,6 +55,7 @@ function App() {
       linkGit: "",
       linkApp: "https://aaronfnp.itch.io/tstorch",
       linkImg: TenSecondTorch,
+      type: "image",
     },
     {
       title: "VFX PORTFOLIO",
@@ -59,7 +63,8 @@ function App() {
       tech: "Adobe Creative Suite",
       linkGit: "",
       linkApp: "https://anpv.webnode.com/",
-      linkImg: ANPReel.mp4,
+      linkImg: ANPReel,
+      type: "video",
     },
   ];
 
