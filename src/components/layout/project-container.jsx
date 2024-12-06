@@ -45,7 +45,7 @@ const ProjectContainer = ({ projects }) => {
                 {project.title}
               </h2>
               <p className="text-md text-[#f6f9ff]">{project.description}</p>
-              <div className="mt-4 w-[40%] h-[.5%] bg-[#f1f1e6]"></div>
+              <div className="mt-4 w-[40%] h-[1px] bg-[#f1f1e6]"></div>
               <h4 className="text-md mt-2 font-bold text-[#4091f9]">
                 {project.tech}
               </h4>
@@ -54,6 +54,8 @@ const ProjectContainer = ({ projects }) => {
                   <a
                     href={project.linkGit}
                     className="flex items-center space-x-4"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img
                       className="object-cover mr-1.5 mt-1.5 mb-3 h-7 w-7"
@@ -63,7 +65,12 @@ const ProjectContainer = ({ projects }) => {
                   </a>
                 )}
                 {project.linkApp && (
-                  <a href={project.linkApp} className="flex items-center">
+                  <a
+                    href={project.linkApp}
+                    className="flex items-center"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       className="object-cover mr-1.5 mt-1.5 mb-3 h-8 w-8"
                       src="https://img.icons8.com/?size=100&id=mVWTXxOBk0I1&format=png&color=f1f1e6"
@@ -85,6 +92,7 @@ const ProjectContainer = ({ projects }) => {
           imageSrc={selectedProject.linkImg}
           altText={selectedProject.title}
           type={selectedProject.type}
+          videoSrc={selectedProject.linkVideo}
         />
       )}
     </div>

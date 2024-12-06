@@ -66,7 +66,7 @@ function App() {
       linkGit: "",
       linkApp: "https://anpv.webnode.com/",
       linkImg: ReelThumb,
-      // linkImg: ANPReel,
+      linkVideo: ANPReel,
       type: "video",
     },
   ];
@@ -102,6 +102,7 @@ function App() {
                   <Contact />
                 </div>
               </section>
+              <StyledBreak />
             </div>
           }
         />

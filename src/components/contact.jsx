@@ -37,7 +37,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="relative h-[75vh] pt-[2vh]">
+    <div className="relative pt-[2vh] lg:h-[75vh] lg:h-auto lg:pt-0">
       <h1 className=" text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2">
         CONTACT
       </h1>
@@ -63,7 +63,8 @@ export default function Contact() {
           {/* Left Column: Timer and Text */}
           <div className="lg:w-1/2 flex flex-col text-left text-[#f6f9ff] mt-2">
             <Timer />
-            <h3 className="mt-5 font-thin">AARON NELSON-PURCELL</h3>
+            <div className="mt-3 w-[40%] h-[1px] bg-[#f1f1e6]"></div>
+            <h3 className="mt-3 font-thin">AARON NELSON-PURCELL</h3>
             <a
               href="mailto:aaronfnp@gmail.com"
               className="font-thin hover:underline hover:font-light"
@@ -99,7 +100,7 @@ export default function Contact() {
               </a>
               <a
                 href="/resume"
-                className="font-thin hover:underline hover:font-light"
+                className="font-thin hover:underline hover:font-light mb-4"
                 target="_blank"
                 rel="noopener noreferrer"
               >
