@@ -4,7 +4,7 @@ export default function About() {
   const tech = [
     { text: "HTML5" },
     { text: "CSS3" },
-    { text: "JavaScript" },
+    { text: "JAVASCRIPT" },
     { text: "C#" },
     { text: "PYTHON" },
     { text: "REACT" },
