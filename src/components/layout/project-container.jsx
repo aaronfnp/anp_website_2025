@@ -44,7 +44,9 @@ const ProjectContainer = ({ projects }) => {
               <h2 className="text-2xl font-semibold text-[#f6f9ff]">
                 {project.title}
               </h2>
-              <p className="text-md text-[#f6f9ff]">{project.description}</p>
+              <p className="text-base md:text-lg text-[#f6f9ff]">
+                {project.description}
+              </p>
               <div className="mt-4 w-[40%] h-[1px] bg-[#f1f1e6]"></div>
               <h4 className="text-md mt-2 font-bold text-[#4091f9]">
                 {project.tech}

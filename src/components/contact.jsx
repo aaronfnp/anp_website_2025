@@ -61,7 +61,7 @@ export default function Contact() {
         />
         <div className="flex flex-col lg:flex-row">
           {/* Left Column: Timer and Text */}
-          <div className="lg:w-1/2 flex flex-col text-left text-[#f6f9ff] mt-2 mr-2">
+          <div className="lg:w-1/2 flex flex-col text-base sm:text-lg md:text-xl text-left text-[#f6f9ff] mt-2 mr-2">
             <Timer />
             <div className="mt-3 w-[40%] h-[1px] bg-[#f1f1e6]"></div>
             <h3 className="mt-3 font-thin">AARON NELSON-PURCELL</h3>
@@ -78,11 +78,6 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {/* <img
-                  className="object-cover h-8 w-8 mr-2"
-                  src="https://img.icons8.com/?size=100&id=12599&format=png&color=f6f9ff"
-                  alt="GitHub Profile"
-                /> */}
                 <h3>GitHub @aaronfnp</h3>
               </a>
               <a
@@ -91,11 +86,6 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {/* <img
-                  className="object-cover h-8 w-8"
-                  src="https://img.icons8.com/?size=100&id=60444&format=png&color=f6f9ff"
-                  alt="LinkedIn Profile"
-                /> */}
                 <h3>LinkedIn @aaronnp</h3>
               </a>
               <a
@@ -104,11 +94,6 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {/* <img
-                  className="object-cover h-12 w-12"
-                  src="https://img.icons8.com/?size=100&id=wf816jDvhsuq&format=png&color=f6f9ff"
-                  alt="Resume"
-                /> */}
                 <h3>Resume PDF</h3>
               </a>
             </div>
