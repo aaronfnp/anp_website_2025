@@ -24,13 +24,13 @@ const TitleCard = () => {
       </video>
 
       {/* Content */}
-      <div className="relative z-10 flex justify-center items-center h-full text-[#f6f9ff] px-4 sm:px-6 md:px-7 lg:px-8">
-        <div className="flex flex-col items-center max-w-full sm:max-w-3xl w-full px-4 sm:px-6 md:px-7 lg:px-8">
+      <div className="relative z-10 flex justify-center items-center h-full text-[#f6f9ff] px-3 xs:px-4 sm:px-6 md:px-8">
+        <div className="flex flex-col items-center max-w-full xs:max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl w-full">
           <div
-            className="group text-center "
+            className="group text-center"
             onClick={() => setIsTitleClicked(true)}
           >
-            <h1 className="flex flex-col text-[#f6f9ff] my-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-futura font-extrabold drop-shadow-4xl ease-in-out transform transition-all whitespace-nowrap">
+            <h1 className="flex flex-col text-[#f6f9ff] my-4 text-base xs:text-lg sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-futura font-extrabold drop-shadow-4xl ease-in-out transform transition-all whitespace-nowrap">
               {/* Title Group 1 */}
               <div className="inline-block">
                 <h2 className="flex justify-between w-full">
@@ -38,7 +38,7 @@ const TitleCard = () => {
                     className={`duration-700 text-left cursor-pointer ${
                       isTitleClicked
                         ? "-translate-x-full opacity-0 text-transparent bg-clip-text bg-gradient-to-r from-white/50 to-black/50"
-                        : "translate-x-8 md:translate-x-20 opacity-100 group-hover:text-[#4091f9]"
+                        : "translate-x-6 xs:translate-x-8 sm:translate-x-12 md:translate-x-20 opacity-100 group-hover:text-[#4091f9]"
                     } drop-shadow-4xl`}
                   >
                     WHAT DO YOU GET
@@ -46,7 +46,7 @@ const TitleCard = () => {
                   <span
                     className={`transition-all duration-700 ease-in-out transform text-right cursor-default ${
                       isTitleClicked
-                        ? "-translate-x-8 md:-translate-x-20 opacity-100"
+                        ? "-translate-x-6 xs:-translate-x-8 sm:-translate-x-12 md:-translate-x-20 opacity-100"
                         : "translate-x-full opacity-0 text-transparent bg-clip-text bg-gradient-to-r from-black/50 to-white/50 opacity-0"
                     } drop-shadow-4xl`}
                   >
@@ -62,15 +62,15 @@ const TitleCard = () => {
                     className={`duration-700 text-left cursor-pointer ${
                       isTitleClicked
                         ? "-translate-x-full opacity-0 text-transparent bg-clip-text bg-gradient-to-r from-white/50 to-black/50"
-                        : "translate-x-8 md:translate-x-20 opacity-100 group-hover:text-[#4091f9]"
+                        : "translate-x-6 xs:translate-x-8 sm:translate-x-12 md:translate-x-20 opacity-100 group-hover:text-[#4091f9]"
                     } drop-shadow-4xl`}
                   >
                     WHEN YOU CROSS
                   </span>
                   <span
-                    className={`transition-all duration-700 ease-in-out transform text-right cursor-default	 ${
+                    className={`transition-all duration-700 ease-in-out transform text-right cursor-default ${
                       isTitleClicked
-                        ? "-translate-x-8 md:-translate-x-20 opacity-100"
+                        ? "-translate-x-6 xs:-translate-x-8 sm:-translate-x-12 md:-translate-x-20 opacity-100"
                         : "translate-x-full opacity-0 text-transparent bg-clip-text bg-gradient-to-r from-black/50 to-white/50 opacity-0"
                     } drop-shadow-4xl`}
                   >
@@ -86,17 +86,17 @@ const TitleCard = () => {
                     className={`duration-700 text-left cursor-pointer ${
                       isTitleClicked
                         ? "-translate-x-full opacity-0 text-transparent bg-clip-text bg-gradient-to-r from-white/50 to-black/50"
-                        : "translate-x-8 md:translate-x-20 opacity-100 group-hover:text-[#4091f9]"
+                        : "translate-x-6 xs:translate-x-8 sm:translate-x-12 md:translate-x-20 opacity-100 group-hover:text-[#4091f9]"
                     } drop-shadow-4xl`}
                   >
                     A VFX ARTIST AND DEVELOPER?
                   </span>
                   <span
-                    className={`transition-all duration-700 ease-in-out transform text-right cursor-default	 ${
+                    className={`transition-all duration-700 ease-in-out transform text-right cursor-default ${
                       isTitleClicked
-                        ? "-translate-x-8 md:-translate-x-20 opacity-100 "
+                        ? "-translate-x-6 xs:-translate-x-8 sm:-translate-x-12 md:-translate-x-20 opacity-100"
                         : "translate-x-full opacity-0 text-transparent bg-clip-text bg-gradient-to-r from-black/50 to-white/50 opacity-0"
-                    } drop-shadow-4xl `}
+                    } drop-shadow-4xl`}
                   >
                     {titles.title3}
                   </span>
