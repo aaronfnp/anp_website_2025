@@ -52,7 +52,7 @@ const ProjectContainer = ({ projects }) => {
                 {project.tech}
               </h4>
               <div className="flex justify-start">
-                {project.linkGit && (
+                {project.linkGit ? (
                   <a
                     href={project.linkGit}
                     className="flex items-center space-x-4"
@@ -65,6 +65,8 @@ const ProjectContainer = ({ projects }) => {
                       alt="GitHub Icon"
                     />
                   </a>
+                ) : (
+                  <div className="mt-1.5 mb-3"></div>
                 )}
                 {project.linkApp && (
                   <a
