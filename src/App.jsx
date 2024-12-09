@@ -22,8 +22,8 @@ function App() {
       description:
         "A dynamic web application for creating and sharing custom talent trees, designed for gamers to personalize skill paths.",
       tech: "React, Firebase, Vite, Tailwind",
-      linkGit: "https://github.com/chriscain/talent-trees",
-      linkApp: "",
+      linkGit: "",
+      linkApp: "https://rpgbp-81428.web.app/home",
       linkImg: TalentTrees,
       type: "image",
     },

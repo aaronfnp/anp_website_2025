@@ -10,12 +10,14 @@ export default function About() {
     { text: "REACT" },
     { text: "TAILWINDCSS" },
     { text: "VITE" },
+    { text: "AWS" },
     { text: "NODE.JS" },
     { text: "GIT" },
     { text: "MONGODB" },
     { text: "MONGOOSE" },
     { text: "FIREBASE" },
     { text: "EXPRESS" },
+    { text: "MYSQL" },
   ];
 
   const description =
