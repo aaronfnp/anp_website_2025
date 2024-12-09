@@ -24,8 +24,8 @@ const TitleCard = () => {
       </video>
 
       {/* Content */}
-      <div className="relative z-10 flex justify-center items-center h-full text-[#f6f9ff]">
-        <div className="flex flex-col items-center max-w-3xl w-full px-4 sm:px-6 md:px-7lg:px-8">
+      <div className="relative z-10 flex justify-center items-center h-full text-[#f6f9ff] px-4 sm:px-6 md:px-7 lg:px-8">
+        <div className="flex flex-col items-center max-w-full sm:max-w-3xl w-full px-4 sm:px-6 md:px-7 lg:px-8">
           <div
             className="group text-center "
             onClick={() => setIsTitleClicked(true)}

@@ -61,7 +61,7 @@ export default function Contact() {
         />
         <div className="flex flex-col lg:flex-row">
           {/* Left Column: Timer and Text */}
-          <div className="lg:w-1/2 flex flex-col text-left text-[#f6f9ff] mt-2">
+          <div className="lg:w-1/2 flex flex-col text-left text-[#f6f9ff] mt-2 mr-2">
             <Timer />
             <div className="mt-3 w-[40%] h-[1px] bg-[#f1f1e6]"></div>
             <h3 className="mt-3 font-thin">AARON NELSON-PURCELL</h3>
