@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import ANPResume from "../../assets/resume/ANPResume.pdf";
+import ANPResume from "../assets/resume/ANPResume.pdf";
 
 const Portfolio = () => {
   useEffect(() => {

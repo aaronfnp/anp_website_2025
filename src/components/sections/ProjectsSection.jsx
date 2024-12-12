@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Popout from "./imagepopout";
+import Popout from "../ui/ImagePopout";
 
 const ProjectContainer = ({ projects }) => {
   const [isPopoutOpen, setPopoutOpen] = useState(false);

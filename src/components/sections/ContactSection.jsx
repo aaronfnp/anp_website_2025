@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Timer from "./timer";
-import DialogWindow from "./dialog";
+import Timer from "../ui/Timer";
+import DialogWindow from "../ui/Dialog";
 
 export default function Contact() {
   const [isSubmittingDialog, setIsSubmittingDialog] = useState(false);
