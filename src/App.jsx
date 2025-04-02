@@ -12,6 +12,7 @@ import StyledBreak from "./components/layout/StyledDivider";
 import GetBackToWork from "./assets/images/GetBackToWork.png";
 import TenSecondTorch from "./assets/images/TenSecondTorch.png";
 import TalentTrees from "./assets/images/TalentTrees.png";
+import SponsorForce from "./assets/images/SponsorForce.png";
 import ReelThumb from "./assets/images/ReelThumb.png";
 import ANPReel from "./assets/videos/ANPReel.mp4";
 
@@ -28,16 +29,16 @@ function App() {
       type: "image",
     },
     {
-      title: "COLONEL KERNEL",
+      title: "SPONSORFORCE",
       description:
-        'A clicker game where users earn "corn" to purchase upgrades.',
-      tech: "MongoDB, Express, React, Node.js",
-      linkGit: "https://github.com/aaronfnp/kernel_colonel",
-      linkApp: "https://kernelcolonel-363e070e95f0.herokuapp.com/",
+        "Optimized and redesigned the UI/UX on this Japan-based company's website to enhance usability by improving page layouts and ensure full mobile responsiveness.",
+      tech: "Vue, Javascript, CSS, HTML",
+      // linkGit: "https://github.com/aaronfnp/kernel_colonel",
+      linkApp: "https://www.sponsorforce.net/#/portal/home",
       linkImg:
-        "https://raw.githubusercontent.com/aaronfnp/kernel_colonel/main/public/game-interface.png",
+        SponsorForce,
       type: "image",
-    },
+    },    
     {
       title: "GET BACK TO WORK",
       description:
