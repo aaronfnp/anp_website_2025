@@ -14,10 +14,21 @@ import TenSecondTorch from "./assets/images/TenSecondTorch.png";
 import TalentTrees from "./assets/images/TalentTrees.png";
 import SponsorForce from "./assets/images/SponsorForce.png";
 import ReelThumb from "./assets/images/ReelThumb.png";
+import GameLocAI from "./assets/images/GameLoc_SS.png"
 import ANPReel from "./assets/videos/ANPReel.mp4";
 
 function App() {
   const projects = [
+    {
+      title: "GAME-LOCAI",
+      description: 
+        "A contextual game localization application that leverages Claude API to translate game content into multiple languages, streamlining the process and costs for developers.",
+      tech: "React, Vite, Firestore, Google OAuth, Claude API",
+      linkGit: "",
+      linkApp: "",
+      linkImg: GameLocAI, 
+      type: "image",
+    },
     {
       title: "TALENT-TREES",
       description:
